@@ -1,91 +1,144 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { CreateProjectDto } from './dto/create-project.dto';
-import { UpdateProjectDto } from './dto/update-project.dto';
 import { PrismaService } from 'src/prisma/prisma.service';
 import * as fs from 'fs';
 import * as readline from 'readline';
-
-interface AccProject {
-  lcpCode: string;
-  name: string;
-  description?: string | null;
-  amount: number;
-  currency: string;
-}
+import { CreateProjectDto } from './dto/create-project.dto';
+import { UpdateProjectDto } from './dto/update-project.dto';
 
 @Injectable()
 export class ProjectsService {
   private readonly logger = new Logger(ProjectsService.name);
+
   constructor(private prisma: PrismaService) {}
 
+  // ======================================================
+  // 🔑 FUNCIONES UTILITARIAS CLAVE
+  // ======================================================
+
+  /**
+   * Convierte números estilo SAP:
+   * 110.000,00 → 110000.00
+   */
+  private parseAmount(value: string): number {
+    if (!value) return 0;
+
+    const normalized = value
+      .replace(/\./g, '') // miles
+      .replace(',', '.') // decimal
+      .trim();
+
+    const result = Number(normalized);
+    return isNaN(result) ? 0 : result;
+  }
+
+  /**
+   * Parsea códigos LCP completos:
+   * LCP-130109-01
+   * LCP-130109-01-EX
+   */
+
+  private parseCode(code: string) {
+    return code.split('-').slice(0, 2).join('-'); // LCP-130109
+  }
+  private isExpense(code: string): boolean {
+    return code.toUpperCase().includes('-EX');
+  }
+
+  // ======================================================
+  // 📥 IMPORTADOR DE PRESUPUESTO
+  // ======================================================
   async importBudget(filePath: string): Promise<void> {
     const stream = fs.createReadStream(filePath);
-
     const rl = readline.createInterface({
       input: stream,
       crlfDelay: Infinity,
     });
 
-    const map = new Map<string, AccProject>();
-
-    for await (const line of rl) {
-      if (!line.trim()) continue;
-
-      if (!line.trim().startsWith('LCP-')) {
-        continue;
+    const projects = new Map<
+      string,
+      {
+        name: string;
+        capTotal: number;
+        expTotal: number;
       }
+    >();
 
-      const cleanLine = line.trim();
+    // ------------------------------
+    // 1️⃣ Leer archivo
+    // ------------------------------
+    for await (const rawLine of rl) {
+      const line = rawLine.trim();
+      if (!line.startsWith('LCP-')) continue;
 
-      const columns = cleanLine.split('\t');
+      const [lcpCode, name, reference, dateRaw, amountRaw, currencyRaw] =
+        line.split('\t');
 
-      const [lcpCode, name, userId, date, amountRaw, currency] = columns;
+      if (!lcpCode || !name || !amountRaw) continue;
 
-      const amount = Number(amountRaw);
+      const amount = this.parseAmount(amountRaw);
+      if (amount === 0) continue;
 
-      if (!lcpCode || !name || isNaN(amount)) continue;
+      const mainCode = this.parseCode(lcpCode);
+      const expense = this.isExpense(lcpCode);
 
-      const key = `${lcpCode}|${name}|${currency}`;
-
-      if (map.has(key)) {
-        map.get(key)!.amount += amount;
-      } else {
-        map.set(key, {
-          lcpCode: lcpCode.trim(),
-          name: name.trim(),
-
-          amount,
-          currency: currency?.trim() || 'CLP',
+      if (!projects.has(mainCode)) {
+        projects.set(mainCode, {
+          name,
+          capTotal: 0,
+          expTotal: 0,
         });
+      }
+      const project = projects.get(mainCode)!;
+      if (expense) {
+        project.expTotal += amount;
+      } else {
+        project.capTotal += amount;
       }
     }
 
-    this.logger.log(map);
+    const proyectos = await this.prisma.$transaction(
+      [...projects].map(([lcpCode, data]) =>
+        this.prisma.project.upsert({
+          where: { lcpCode },
+          update: {
+            name: data.name,
+            capTotal: data.capTotal,
+            expTotal: data.expTotal,
+          },
+          create: {
+            lcpCode,
+            name: data.name,
+            capTotal: data.capTotal,
+            expTotal: data.expTotal,
+          },
+        }),
+      ),
+    );
 
-    await this.prisma.project.createMany({
-      data: Array.from(map.values()),
-    });
-
-    this.logger.log('Importación finalizada');
+    this.logger.log(`Movimientos leídos: ${proyectos.length}`);
   }
 
+  // ======================================================
+  // CRUD BÁSICO (para el controller)
+  // ======================================================
+
   create(createProjectDto: CreateProjectDto) {
-    return 'This action adds a new project';
+    return null; // Implementación pendiente
   }
 
   findAll() {
-    return this.prisma.project.findMany();
+    return null;
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} project`;
+    return null;
   }
 
   update(id: number, updateProjectDto: UpdateProjectDto) {
-    return `This action updates a #${id} project`;
+    return null;
   }
 
   remove(id: number) {
-    return `This action removes a #${id} project`;
+    return null;
   }
 }

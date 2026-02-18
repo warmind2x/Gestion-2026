@@ -28,21 +28,22 @@ export type AggregateProject = {
 
 export type ProjectAvgAggregateOutputType = {
   id: number | null
-  amount: number | null
+  capTotal: number | null
+  expTotal: number | null
 }
 
 export type ProjectSumAggregateOutputType = {
   id: number | null
-  amount: number | null
+  capTotal: number | null
+  expTotal: number | null
 }
 
 export type ProjectMinAggregateOutputType = {
   id: number | null
   lcpCode: string | null
   name: string | null
-  description: string | null
-  amount: number | null
-  currency: string | null
+  capTotal: number | null
+  expTotal: number | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -51,9 +52,8 @@ export type ProjectMaxAggregateOutputType = {
   id: number | null
   lcpCode: string | null
   name: string | null
-  description: string | null
-  amount: number | null
-  currency: string | null
+  capTotal: number | null
+  expTotal: number | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -62,9 +62,8 @@ export type ProjectCountAggregateOutputType = {
   id: number
   lcpCode: number
   name: number
-  description: number
-  amount: number
-  currency: number
+  capTotal: number
+  expTotal: number
   createdAt: number
   updatedAt: number
   _all: number
@@ -73,21 +72,22 @@ export type ProjectCountAggregateOutputType = {
 
 export type ProjectAvgAggregateInputType = {
   id?: true
-  amount?: true
+  capTotal?: true
+  expTotal?: true
 }
 
 export type ProjectSumAggregateInputType = {
   id?: true
-  amount?: true
+  capTotal?: true
+  expTotal?: true
 }
 
 export type ProjectMinAggregateInputType = {
   id?: true
   lcpCode?: true
   name?: true
-  description?: true
-  amount?: true
-  currency?: true
+  capTotal?: true
+  expTotal?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -96,9 +96,8 @@ export type ProjectMaxAggregateInputType = {
   id?: true
   lcpCode?: true
   name?: true
-  description?: true
-  amount?: true
-  currency?: true
+  capTotal?: true
+  expTotal?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -107,9 +106,8 @@ export type ProjectCountAggregateInputType = {
   id?: true
   lcpCode?: true
   name?: true
-  description?: true
-  amount?: true
-  currency?: true
+  capTotal?: true
+  expTotal?: true
   createdAt?: true
   updatedAt?: true
   _all?: true
@@ -205,9 +203,8 @@ export type ProjectGroupByOutputType = {
   id: number
   lcpCode: string
   name: string
-  description: string | null
-  amount: number
-  currency: string
+  capTotal: number
+  expTotal: number
   createdAt: Date
   updatedAt: Date
   _count: ProjectCountAggregateOutputType | null
@@ -239,9 +236,8 @@ export type ProjectWhereInput = {
   id?: Prisma.IntFilter<"Project"> | number
   lcpCode?: Prisma.StringFilter<"Project"> | string
   name?: Prisma.StringFilter<"Project"> | string
-  description?: Prisma.StringNullableFilter<"Project"> | string | null
-  amount?: Prisma.FloatFilter<"Project"> | number
-  currency?: Prisma.StringFilter<"Project"> | string
+  capTotal?: Prisma.FloatFilter<"Project"> | number
+  expTotal?: Prisma.FloatFilter<"Project"> | number
   createdAt?: Prisma.DateTimeFilter<"Project"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Project"> | Date | string
 }
@@ -250,34 +246,31 @@ export type ProjectOrderByWithRelationInput = {
   id?: Prisma.SortOrder
   lcpCode?: Prisma.SortOrder
   name?: Prisma.SortOrder
-  description?: Prisma.SortOrderInput | Prisma.SortOrder
-  amount?: Prisma.SortOrder
-  currency?: Prisma.SortOrder
+  capTotal?: Prisma.SortOrder
+  expTotal?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
 
 export type ProjectWhereUniqueInput = Prisma.AtLeast<{
   id?: number
+  lcpCode?: string
   AND?: Prisma.ProjectWhereInput | Prisma.ProjectWhereInput[]
   OR?: Prisma.ProjectWhereInput[]
   NOT?: Prisma.ProjectWhereInput | Prisma.ProjectWhereInput[]
-  lcpCode?: Prisma.StringFilter<"Project"> | string
   name?: Prisma.StringFilter<"Project"> | string
-  description?: Prisma.StringNullableFilter<"Project"> | string | null
-  amount?: Prisma.FloatFilter<"Project"> | number
-  currency?: Prisma.StringFilter<"Project"> | string
+  capTotal?: Prisma.FloatFilter<"Project"> | number
+  expTotal?: Prisma.FloatFilter<"Project"> | number
   createdAt?: Prisma.DateTimeFilter<"Project"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Project"> | Date | string
-}, "id">
+}, "id" | "lcpCode">
 
 export type ProjectOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
   lcpCode?: Prisma.SortOrder
   name?: Prisma.SortOrder
-  description?: Prisma.SortOrderInput | Prisma.SortOrder
-  amount?: Prisma.SortOrder
-  currency?: Prisma.SortOrder
+  capTotal?: Prisma.SortOrder
+  expTotal?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   _count?: Prisma.ProjectCountOrderByAggregateInput
@@ -294,9 +287,8 @@ export type ProjectScalarWhereWithAggregatesInput = {
   id?: Prisma.IntWithAggregatesFilter<"Project"> | number
   lcpCode?: Prisma.StringWithAggregatesFilter<"Project"> | string
   name?: Prisma.StringWithAggregatesFilter<"Project"> | string
-  description?: Prisma.StringNullableWithAggregatesFilter<"Project"> | string | null
-  amount?: Prisma.FloatWithAggregatesFilter<"Project"> | number
-  currency?: Prisma.StringWithAggregatesFilter<"Project"> | string
+  capTotal?: Prisma.FloatWithAggregatesFilter<"Project"> | number
+  expTotal?: Prisma.FloatWithAggregatesFilter<"Project"> | number
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"Project"> | Date | string
   updatedAt?: Prisma.DateTimeWithAggregatesFilter<"Project"> | Date | string
 }
@@ -304,9 +296,8 @@ export type ProjectScalarWhereWithAggregatesInput = {
 export type ProjectCreateInput = {
   lcpCode: string
   name: string
-  description?: string | null
-  amount: number
-  currency: string
+  capTotal?: number
+  expTotal?: number
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -315,9 +306,8 @@ export type ProjectUncheckedCreateInput = {
   id?: number
   lcpCode: string
   name: string
-  description?: string | null
-  amount: number
-  currency: string
+  capTotal?: number
+  expTotal?: number
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -325,9 +315,8 @@ export type ProjectUncheckedCreateInput = {
 export type ProjectUpdateInput = {
   lcpCode?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
-  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  amount?: Prisma.FloatFieldUpdateOperationsInput | number
-  currency?: Prisma.StringFieldUpdateOperationsInput | string
+  capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -336,9 +325,8 @@ export type ProjectUncheckedUpdateInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   lcpCode?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
-  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  amount?: Prisma.FloatFieldUpdateOperationsInput | number
-  currency?: Prisma.StringFieldUpdateOperationsInput | string
+  capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -347,9 +335,8 @@ export type ProjectCreateManyInput = {
   id?: number
   lcpCode: string
   name: string
-  description?: string | null
-  amount: number
-  currency: string
+  capTotal?: number
+  expTotal?: number
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -357,9 +344,8 @@ export type ProjectCreateManyInput = {
 export type ProjectUpdateManyMutationInput = {
   lcpCode?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
-  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  amount?: Prisma.FloatFieldUpdateOperationsInput | number
-  currency?: Prisma.StringFieldUpdateOperationsInput | string
+  capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -368,9 +354,8 @@ export type ProjectUncheckedUpdateManyInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   lcpCode?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
-  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  amount?: Prisma.FloatFieldUpdateOperationsInput | number
-  currency?: Prisma.StringFieldUpdateOperationsInput | string
+  capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -379,25 +364,24 @@ export type ProjectCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
   lcpCode?: Prisma.SortOrder
   name?: Prisma.SortOrder
-  description?: Prisma.SortOrder
-  amount?: Prisma.SortOrder
-  currency?: Prisma.SortOrder
+  capTotal?: Prisma.SortOrder
+  expTotal?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
 
 export type ProjectAvgOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  amount?: Prisma.SortOrder
+  capTotal?: Prisma.SortOrder
+  expTotal?: Prisma.SortOrder
 }
 
 export type ProjectMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
   lcpCode?: Prisma.SortOrder
   name?: Prisma.SortOrder
-  description?: Prisma.SortOrder
-  amount?: Prisma.SortOrder
-  currency?: Prisma.SortOrder
+  capTotal?: Prisma.SortOrder
+  expTotal?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -406,24 +390,20 @@ export type ProjectMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
   lcpCode?: Prisma.SortOrder
   name?: Prisma.SortOrder
-  description?: Prisma.SortOrder
-  amount?: Prisma.SortOrder
-  currency?: Prisma.SortOrder
+  capTotal?: Prisma.SortOrder
+  expTotal?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
 
 export type ProjectSumOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  amount?: Prisma.SortOrder
+  capTotal?: Prisma.SortOrder
+  expTotal?: Prisma.SortOrder
 }
 
 export type StringFieldUpdateOperationsInput = {
   set?: string
-}
-
-export type NullableStringFieldUpdateOperationsInput = {
-  set?: string | null
 }
 
 export type FloatFieldUpdateOperationsInput = {
@@ -452,9 +432,8 @@ export type ProjectSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs 
   id?: boolean
   lcpCode?: boolean
   name?: boolean
-  description?: boolean
-  amount?: boolean
-  currency?: boolean
+  capTotal?: boolean
+  expTotal?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }, ExtArgs["result"]["project"]>
@@ -463,9 +442,8 @@ export type ProjectSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Exten
   id?: boolean
   lcpCode?: boolean
   name?: boolean
-  description?: boolean
-  amount?: boolean
-  currency?: boolean
+  capTotal?: boolean
+  expTotal?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }, ExtArgs["result"]["project"]>
@@ -474,9 +452,8 @@ export type ProjectSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Exten
   id?: boolean
   lcpCode?: boolean
   name?: boolean
-  description?: boolean
-  amount?: boolean
-  currency?: boolean
+  capTotal?: boolean
+  expTotal?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }, ExtArgs["result"]["project"]>
@@ -485,14 +462,13 @@ export type ProjectSelectScalar = {
   id?: boolean
   lcpCode?: boolean
   name?: boolean
-  description?: boolean
-  amount?: boolean
-  currency?: boolean
+  capTotal?: boolean
+  expTotal?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }
 
-export type ProjectOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "lcpCode" | "name" | "description" | "amount" | "currency" | "createdAt" | "updatedAt", ExtArgs["result"]["project"]>
+export type ProjectOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "lcpCode" | "name" | "capTotal" | "expTotal" | "createdAt" | "updatedAt", ExtArgs["result"]["project"]>
 
 export type $ProjectPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Project"
@@ -501,9 +477,8 @@ export type $ProjectPayload<ExtArgs extends runtime.Types.Extensions.InternalArg
     id: number
     lcpCode: string
     name: string
-    description: string | null
-    amount: number
-    currency: string
+    capTotal: number
+    expTotal: number
     createdAt: Date
     updatedAt: Date
   }, ExtArgs["result"]["project"]>
@@ -932,9 +907,8 @@ export interface ProjectFieldRefs {
   readonly id: Prisma.FieldRef<"Project", 'Int'>
   readonly lcpCode: Prisma.FieldRef<"Project", 'String'>
   readonly name: Prisma.FieldRef<"Project", 'String'>
-  readonly description: Prisma.FieldRef<"Project", 'String'>
-  readonly amount: Prisma.FieldRef<"Project", 'Float'>
-  readonly currency: Prisma.FieldRef<"Project", 'String'>
+  readonly capTotal: Prisma.FieldRef<"Project", 'Float'>
+  readonly expTotal: Prisma.FieldRef<"Project", 'Float'>
   readonly createdAt: Prisma.FieldRef<"Project", 'DateTime'>
   readonly updatedAt: Prisma.FieldRef<"Project", 'DateTime'>
 }

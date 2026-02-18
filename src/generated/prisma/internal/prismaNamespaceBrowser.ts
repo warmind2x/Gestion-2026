@@ -74,9 +74,8 @@ export const ProjectScalarFieldEnum = {
   id: 'id',
   lcpCode: 'lcpCode',
   name: 'name',
-  description: 'description',
-  amount: 'amount',
-  currency: 'currency',
+  capTotal: 'capTotal',
+  expTotal: 'expTotal',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const
@@ -98,12 +97,4 @@ export const QueryMode = {
 } as const
 
 export type QueryMode = (typeof QueryMode)[keyof typeof QueryMode]
-
-
-export const NullsOrder = {
-  first: 'first',
-  last: 'last'
-} as const
-
-export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
 

@@ -15,12 +15,11 @@ datasource db {
 }
 
 model Project {
-  id          Int      @id @default(autoincrement())
-  lcpCode     String
-  name        String
-  description String?
-  amount      Float
-  currency    String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id        Int      @id @default(autoincrement())
+  lcpCode   String   @unique
+  name      String
+  capTotal  Float    @default(0)
+  expTotal  Float    @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

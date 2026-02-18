@@ -29,7 +29,7 @@ export class ProjectsController {
   @Post('import')
   @UseInterceptors(
     FileInterceptor('file', {
-      limits: { fileSize: 500 * 1024 * 1024 }, // 500 MB
+      limits: { fileSize: 50 * 1024 * 1024 }, // 500 MB
     }),
   )
   @ApiConsumes('multipart/form-data')
