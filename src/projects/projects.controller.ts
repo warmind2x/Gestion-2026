@@ -26,7 +26,7 @@ export class ProjectsController {
   // =============================
   // IMPORTAR PRESUPUESTO TSV
   // =============================
-  @Post('import')
+  @Post('importBudget')
   @UseInterceptors(
     FileInterceptor('file', {
       limits: { fileSize: 50 * 1024 * 1024 }, // 500 MB
@@ -175,28 +175,26 @@ export class ProjectsController {
   // =============================
   // CRUD NORMAL
   // =============================
-  // @Post()
-  // create(@Body() createProjectDto: CreateProjectDto) {
-  //   return this.projectsService.create(createProjectDto);
-  // }
 
-  // @Get()
-  // findAll() {
-  //   return this.projectsService.findAll();
-  // }
+  @Get()
+  findAll() {
+    return this.projectsService.findAll();
+  }
 
-  // @Get(':id')
-  // findOne(@Param('id') id: string) {
-  //   return this.projectsService.findOne(+id);
-  // }
+  @Get(':lcpCode')
+  findOne(@Param('lcpCode') lcpCode: string) {
+    return this.projectsService.findOneByLcpCode(lcpCode.toUpperCase());
+  }
 
-  // @Patch(':id')
-  // update(@Param('id') id: string, @Body() updateProjectDto: UpdateProjectDto) {
-  //   return this.projectsService.update(+id, updateProjectDto);
-  // }
+  @Get('gastos/:lcpCode')
+  findOneGastos(@Param('lcpCode') lcpCode: string) {
+    return this.projectsService.findOneByLcpCodeGastos(lcpCode.toUpperCase());
+  }
 
-  // @Delete(':id')
-  // remove(@Param('id') id: string) {
-  //   return this.projectsService.remove(+id);
-  // }
+  @Get('comprometido/:lcpCode')
+  findOneComprometido(@Param('lcpCode') lcpCode: string) {
+    return this.projectsService.findOneByLcpCodeComprometido(
+      lcpCode.toUpperCase(),
+    );
+  }
 }
