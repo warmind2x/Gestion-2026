@@ -9,4 +9,6 @@
  * 🟢 You can import this file directly.
  */
 export type * from './models/Project.js'
+export type * from './models/Real.js'
+export type * from './models/Comprometido.js'
 export type * from './commonInputTypes.js'

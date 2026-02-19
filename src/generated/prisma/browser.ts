@@ -22,3 +22,13 @@ export * from './enums.js';
  * 
  */
 export type Project = Prisma.ProjectModel
+/**
+ * Model Real
+ * 
+ */
+export type Real = Prisma.RealModel
+/**
+ * Model Comprometido
+ * 
+ */
+export type Comprometido = Prisma.ComprometidoModel

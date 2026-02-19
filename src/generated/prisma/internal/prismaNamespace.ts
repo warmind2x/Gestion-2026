@@ -384,7 +384,9 @@ type FieldRefInputType<Model, FieldType> = Model extends never ? never : FieldRe
 
 
 export const ModelName = {
-  Project: 'Project'
+  Project: 'Project',
+  Real: 'Real',
+  Comprometido: 'Comprometido'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -400,7 +402,7 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
-    modelProps: "project"
+    modelProps: "project" | "real" | "comprometido"
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
@@ -478,6 +480,154 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         }
       }
     }
+    Real: {
+      payload: Prisma.$RealPayload<ExtArgs>
+      fields: Prisma.RealFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.RealFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.RealFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload>
+        }
+        findFirst: {
+          args: Prisma.RealFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.RealFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload>
+        }
+        findMany: {
+          args: Prisma.RealFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload>[]
+        }
+        create: {
+          args: Prisma.RealCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload>
+        }
+        createMany: {
+          args: Prisma.RealCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.RealCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload>[]
+        }
+        delete: {
+          args: Prisma.RealDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload>
+        }
+        update: {
+          args: Prisma.RealUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload>
+        }
+        deleteMany: {
+          args: Prisma.RealDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.RealUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.RealUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload>[]
+        }
+        upsert: {
+          args: Prisma.RealUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$RealPayload>
+        }
+        aggregate: {
+          args: Prisma.RealAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateReal>
+        }
+        groupBy: {
+          args: Prisma.RealGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.RealGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.RealCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.RealCountAggregateOutputType> | number
+        }
+      }
+    }
+    Comprometido: {
+      payload: Prisma.$ComprometidoPayload<ExtArgs>
+      fields: Prisma.ComprometidoFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.ComprometidoFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.ComprometidoFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload>
+        }
+        findFirst: {
+          args: Prisma.ComprometidoFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.ComprometidoFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload>
+        }
+        findMany: {
+          args: Prisma.ComprometidoFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload>[]
+        }
+        create: {
+          args: Prisma.ComprometidoCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload>
+        }
+        createMany: {
+          args: Prisma.ComprometidoCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.ComprometidoCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload>[]
+        }
+        delete: {
+          args: Prisma.ComprometidoDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload>
+        }
+        update: {
+          args: Prisma.ComprometidoUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload>
+        }
+        deleteMany: {
+          args: Prisma.ComprometidoDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.ComprometidoUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.ComprometidoUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload>[]
+        }
+        upsert: {
+          args: Prisma.ComprometidoUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ComprometidoPayload>
+        }
+        aggregate: {
+          args: Prisma.ComprometidoAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateComprometido>
+        }
+        groupBy: {
+          args: Prisma.ComprometidoGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.ComprometidoGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.ComprometidoCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.ComprometidoCountAggregateOutputType> | number
+        }
+      }
+    }
   }
 } & {
   other: {
@@ -530,6 +680,35 @@ export const ProjectScalarFieldEnum = {
 export type ProjectScalarFieldEnum = (typeof ProjectScalarFieldEnum)[keyof typeof ProjectScalarFieldEnum]
 
 
+export const RealScalarFieldEnum = {
+  id: 'id',
+  projectId: 'projectId',
+  expDescription: 'expDescription',
+  purchaseOrder: 'purchaseOrder',
+  amount: 'amount',
+  currency: 'currency',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type RealScalarFieldEnum = (typeof RealScalarFieldEnum)[keyof typeof RealScalarFieldEnum]
+
+
+export const ComprometidoScalarFieldEnum = {
+  id: 'id',
+  projectId: 'projectId',
+  descripcion: 'descripcion',
+  refDoc: 'refDoc',
+  amount: 'amount',
+  currency: 'currency',
+  docDate: 'docDate',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type ComprometidoScalarFieldEnum = (typeof ComprometidoScalarFieldEnum)[keyof typeof ComprometidoScalarFieldEnum]
+
+
 export const SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -544,6 +723,14 @@ export const QueryMode = {
 } as const
 
 export type QueryMode = (typeof QueryMode)[keyof typeof QueryMode]
+
+
+export const NullsOrder = {
+  first: 'first',
+  last: 'last'
+} as const
+
+export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
 
 
 
@@ -703,6 +890,8 @@ export type PrismaClientOptions = ({
 }
 export type GlobalOmitConfig = {
   project?: Prisma.ProjectOmit
+  real?: Prisma.RealOmit
+  comprometido?: Prisma.ComprometidoOmit
 }
 
 /* Types for Logging */

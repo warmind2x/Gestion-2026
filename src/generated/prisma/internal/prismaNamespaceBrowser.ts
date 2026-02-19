@@ -51,7 +51,9 @@ export const AnyNull = runtime.AnyNull
 
 
 export const ModelName = {
-  Project: 'Project'
+  Project: 'Project',
+  Real: 'Real',
+  Comprometido: 'Comprometido'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -83,6 +85,35 @@ export const ProjectScalarFieldEnum = {
 export type ProjectScalarFieldEnum = (typeof ProjectScalarFieldEnum)[keyof typeof ProjectScalarFieldEnum]
 
 
+export const RealScalarFieldEnum = {
+  id: 'id',
+  projectId: 'projectId',
+  expDescription: 'expDescription',
+  purchaseOrder: 'purchaseOrder',
+  amount: 'amount',
+  currency: 'currency',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type RealScalarFieldEnum = (typeof RealScalarFieldEnum)[keyof typeof RealScalarFieldEnum]
+
+
+export const ComprometidoScalarFieldEnum = {
+  id: 'id',
+  projectId: 'projectId',
+  descripcion: 'descripcion',
+  refDoc: 'refDoc',
+  amount: 'amount',
+  currency: 'currency',
+  docDate: 'docDate',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type ComprometidoScalarFieldEnum = (typeof ComprometidoScalarFieldEnum)[keyof typeof ComprometidoScalarFieldEnum]
+
+
 export const SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -97,4 +128,12 @@ export const QueryMode = {
 } as const
 
 export type QueryMode = (typeof QueryMode)[keyof typeof QueryMode]
+
+
+export const NullsOrder = {
+  first: 'first',
+  last: 'last'
+} as const
+
+export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
 
