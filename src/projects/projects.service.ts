@@ -2,8 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 import * as fs from 'fs';
 import * as readline from 'readline';
-import { CreateProjectDto } from './dto/create-project.dto';
-import { UpdateProjectDto } from './dto/update-project.dto';
+import { ProjectStatus } from '../generated/prisma/client';
 
 @Injectable()
 export class ProjectsService {
@@ -389,6 +388,32 @@ export class ProjectsService {
     return this.prisma.project.findUnique({
       where: { lcpCode },
       include: { comprometidos: true },
+    });
+  }
+
+  async getStats() {
+    const [totalProjects, totalGastos, totalComprometidos, totalAbiertos] =
+      await Promise.all([
+        this.prisma.project.count(),
+        this.prisma.real.aggregate({ _sum: { amount: true } }),
+        this.prisma.comprometido.aggregate({ _sum: { amount: true } }),
+        this.prisma.project.aggregate({
+          where: { status: 'ABIERTO' },
+          _count: true,
+        }),
+      ]);
+    return {
+      totalProjects,
+      totalGastos: totalGastos._sum.amount || 0,
+      totalComprometidos: totalComprometidos._sum.amount || 0,
+      totalAbiertos: totalAbiertos._count,
+    };
+  }
+
+  async updateStatus(id: number, status: ProjectStatus) {
+    return this.prisma.project.update({
+      where: { id },
+      data: { status },
     });
   }
 }

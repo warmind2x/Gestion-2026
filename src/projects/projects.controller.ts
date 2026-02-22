@@ -9,14 +9,14 @@ import {
   UploadedFile,
   UseInterceptors,
   BadRequestException,
+  ParseIntPipe,
 } from '@nestjs/common';
 import { ProjectsService } from './projects.service';
-import { CreateProjectDto } from './dto/create-project.dto';
-import { UpdateProjectDto } from './dto/update-project.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { ApiBody, ApiConsumes, ApiTags } from '@nestjs/swagger';
 import * as fs from 'fs';
 import * as path from 'path';
+import { ProjectStatus } from '../generated/prisma/client';
 
 @ApiTags('Projects')
 @Controller('projects')
@@ -196,5 +196,18 @@ export class ProjectsController {
     return this.projectsService.findOneByLcpCodeComprometido(
       lcpCode.toUpperCase(),
     );
+  }
+
+  @Get('dashboard/stats')
+  getStats() {
+    return this.projectsService.getStats();
+  }
+
+  @Patch(':id/status')
+  updateStatus(
+    @Param('id', ParseIntPipe) id: number,
+    @Body('status') status: ProjectStatus,
+  ) {
+    return this.projectsService.updateStatus(id, status);
   }
 }

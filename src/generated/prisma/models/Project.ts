@@ -44,6 +44,7 @@ export type ProjectMinAggregateOutputType = {
   name: string | null
   capTotal: number | null
   expTotal: number | null
+  status: $Enums.ProjectStatus | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -54,6 +55,7 @@ export type ProjectMaxAggregateOutputType = {
   name: string | null
   capTotal: number | null
   expTotal: number | null
+  status: $Enums.ProjectStatus | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -64,6 +66,7 @@ export type ProjectCountAggregateOutputType = {
   name: number
   capTotal: number
   expTotal: number
+  status: number
   createdAt: number
   updatedAt: number
   _all: number
@@ -88,6 +91,7 @@ export type ProjectMinAggregateInputType = {
   name?: true
   capTotal?: true
   expTotal?: true
+  status?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -98,6 +102,7 @@ export type ProjectMaxAggregateInputType = {
   name?: true
   capTotal?: true
   expTotal?: true
+  status?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -108,6 +113,7 @@ export type ProjectCountAggregateInputType = {
   name?: true
   capTotal?: true
   expTotal?: true
+  status?: true
   createdAt?: true
   updatedAt?: true
   _all?: true
@@ -205,6 +211,7 @@ export type ProjectGroupByOutputType = {
   name: string
   capTotal: number
   expTotal: number
+  status: $Enums.ProjectStatus
   createdAt: Date
   updatedAt: Date
   _count: ProjectCountAggregateOutputType | null
@@ -238,6 +245,7 @@ export type ProjectWhereInput = {
   name?: Prisma.StringFilter<"Project"> | string
   capTotal?: Prisma.FloatFilter<"Project"> | number
   expTotal?: Prisma.FloatFilter<"Project"> | number
+  status?: Prisma.EnumProjectStatusFilter<"Project"> | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFilter<"Project"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Project"> | Date | string
   reals?: Prisma.RealListRelationFilter
@@ -250,6 +258,7 @@ export type ProjectOrderByWithRelationInput = {
   name?: Prisma.SortOrder
   capTotal?: Prisma.SortOrder
   expTotal?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   reals?: Prisma.RealOrderByRelationAggregateInput
@@ -265,6 +274,7 @@ export type ProjectWhereUniqueInput = Prisma.AtLeast<{
   name?: Prisma.StringFilter<"Project"> | string
   capTotal?: Prisma.FloatFilter<"Project"> | number
   expTotal?: Prisma.FloatFilter<"Project"> | number
+  status?: Prisma.EnumProjectStatusFilter<"Project"> | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFilter<"Project"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Project"> | Date | string
   reals?: Prisma.RealListRelationFilter
@@ -277,6 +287,7 @@ export type ProjectOrderByWithAggregationInput = {
   name?: Prisma.SortOrder
   capTotal?: Prisma.SortOrder
   expTotal?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   _count?: Prisma.ProjectCountOrderByAggregateInput
@@ -295,6 +306,7 @@ export type ProjectScalarWhereWithAggregatesInput = {
   name?: Prisma.StringWithAggregatesFilter<"Project"> | string
   capTotal?: Prisma.FloatWithAggregatesFilter<"Project"> | number
   expTotal?: Prisma.FloatWithAggregatesFilter<"Project"> | number
+  status?: Prisma.EnumProjectStatusWithAggregatesFilter<"Project"> | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"Project"> | Date | string
   updatedAt?: Prisma.DateTimeWithAggregatesFilter<"Project"> | Date | string
 }
@@ -304,6 +316,7 @@ export type ProjectCreateInput = {
   name: string
   capTotal?: number
   expTotal?: number
+  status?: $Enums.ProjectStatus
   createdAt?: Date | string
   updatedAt?: Date | string
   reals?: Prisma.RealCreateNestedManyWithoutProjectInput
@@ -316,6 +329,7 @@ export type ProjectUncheckedCreateInput = {
   name: string
   capTotal?: number
   expTotal?: number
+  status?: $Enums.ProjectStatus
   createdAt?: Date | string
   updatedAt?: Date | string
   reals?: Prisma.RealUncheckedCreateNestedManyWithoutProjectInput
@@ -327,6 +341,7 @@ export type ProjectUpdateInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  status?: Prisma.EnumProjectStatusFieldUpdateOperationsInput | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   reals?: Prisma.RealUpdateManyWithoutProjectNestedInput
@@ -339,6 +354,7 @@ export type ProjectUncheckedUpdateInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  status?: Prisma.EnumProjectStatusFieldUpdateOperationsInput | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   reals?: Prisma.RealUncheckedUpdateManyWithoutProjectNestedInput
@@ -351,6 +367,7 @@ export type ProjectCreateManyInput = {
   name: string
   capTotal?: number
   expTotal?: number
+  status?: $Enums.ProjectStatus
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -360,6 +377,7 @@ export type ProjectUpdateManyMutationInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  status?: Prisma.EnumProjectStatusFieldUpdateOperationsInput | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -370,6 +388,7 @@ export type ProjectUncheckedUpdateManyInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  status?: Prisma.EnumProjectStatusFieldUpdateOperationsInput | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -380,6 +399,7 @@ export type ProjectCountOrderByAggregateInput = {
   name?: Prisma.SortOrder
   capTotal?: Prisma.SortOrder
   expTotal?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -396,6 +416,7 @@ export type ProjectMaxOrderByAggregateInput = {
   name?: Prisma.SortOrder
   capTotal?: Prisma.SortOrder
   expTotal?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -406,6 +427,7 @@ export type ProjectMinOrderByAggregateInput = {
   name?: Prisma.SortOrder
   capTotal?: Prisma.SortOrder
   expTotal?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -431,6 +453,10 @@ export type FloatFieldUpdateOperationsInput = {
   decrement?: number
   multiply?: number
   divide?: number
+}
+
+export type EnumProjectStatusFieldUpdateOperationsInput = {
+  set?: $Enums.ProjectStatus
 }
 
 export type DateTimeFieldUpdateOperationsInput = {
@@ -478,6 +504,7 @@ export type ProjectCreateWithoutRealsInput = {
   name: string
   capTotal?: number
   expTotal?: number
+  status?: $Enums.ProjectStatus
   createdAt?: Date | string
   updatedAt?: Date | string
   comprometidos?: Prisma.ComprometidoCreateNestedManyWithoutProjectInput
@@ -489,6 +516,7 @@ export type ProjectUncheckedCreateWithoutRealsInput = {
   name: string
   capTotal?: number
   expTotal?: number
+  status?: $Enums.ProjectStatus
   createdAt?: Date | string
   updatedAt?: Date | string
   comprometidos?: Prisma.ComprometidoUncheckedCreateNestedManyWithoutProjectInput
@@ -515,6 +543,7 @@ export type ProjectUpdateWithoutRealsInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  status?: Prisma.EnumProjectStatusFieldUpdateOperationsInput | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   comprometidos?: Prisma.ComprometidoUpdateManyWithoutProjectNestedInput
@@ -526,6 +555,7 @@ export type ProjectUncheckedUpdateWithoutRealsInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  status?: Prisma.EnumProjectStatusFieldUpdateOperationsInput | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   comprometidos?: Prisma.ComprometidoUncheckedUpdateManyWithoutProjectNestedInput
@@ -536,6 +566,7 @@ export type ProjectCreateWithoutComprometidosInput = {
   name: string
   capTotal?: number
   expTotal?: number
+  status?: $Enums.ProjectStatus
   createdAt?: Date | string
   updatedAt?: Date | string
   reals?: Prisma.RealCreateNestedManyWithoutProjectInput
@@ -547,6 +578,7 @@ export type ProjectUncheckedCreateWithoutComprometidosInput = {
   name: string
   capTotal?: number
   expTotal?: number
+  status?: $Enums.ProjectStatus
   createdAt?: Date | string
   updatedAt?: Date | string
   reals?: Prisma.RealUncheckedCreateNestedManyWithoutProjectInput
@@ -573,6 +605,7 @@ export type ProjectUpdateWithoutComprometidosInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  status?: Prisma.EnumProjectStatusFieldUpdateOperationsInput | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   reals?: Prisma.RealUpdateManyWithoutProjectNestedInput
@@ -584,6 +617,7 @@ export type ProjectUncheckedUpdateWithoutComprometidosInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   capTotal?: Prisma.FloatFieldUpdateOperationsInput | number
   expTotal?: Prisma.FloatFieldUpdateOperationsInput | number
+  status?: Prisma.EnumProjectStatusFieldUpdateOperationsInput | $Enums.ProjectStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   reals?: Prisma.RealUncheckedUpdateManyWithoutProjectNestedInput
@@ -635,6 +669,7 @@ export type ProjectSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs 
   name?: boolean
   capTotal?: boolean
   expTotal?: boolean
+  status?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   reals?: boolean | Prisma.Project$realsArgs<ExtArgs>
@@ -648,6 +683,7 @@ export type ProjectSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Exten
   name?: boolean
   capTotal?: boolean
   expTotal?: boolean
+  status?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }, ExtArgs["result"]["project"]>
@@ -658,6 +694,7 @@ export type ProjectSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Exten
   name?: boolean
   capTotal?: boolean
   expTotal?: boolean
+  status?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }, ExtArgs["result"]["project"]>
@@ -668,11 +705,12 @@ export type ProjectSelectScalar = {
   name?: boolean
   capTotal?: boolean
   expTotal?: boolean
+  status?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }
 
-export type ProjectOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "lcpCode" | "name" | "capTotal" | "expTotal" | "createdAt" | "updatedAt", ExtArgs["result"]["project"]>
+export type ProjectOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "lcpCode" | "name" | "capTotal" | "expTotal" | "status" | "createdAt" | "updatedAt", ExtArgs["result"]["project"]>
 export type ProjectInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   reals?: boolean | Prisma.Project$realsArgs<ExtArgs>
   comprometidos?: boolean | Prisma.Project$comprometidosArgs<ExtArgs>
@@ -693,6 +731,7 @@ export type $ProjectPayload<ExtArgs extends runtime.Types.Extensions.InternalArg
     name: string
     capTotal: number
     expTotal: number
+    status: $Enums.ProjectStatus
     createdAt: Date
     updatedAt: Date
   }, ExtArgs["result"]["project"]>
@@ -1125,6 +1164,7 @@ export interface ProjectFieldRefs {
   readonly name: Prisma.FieldRef<"Project", 'String'>
   readonly capTotal: Prisma.FieldRef<"Project", 'Float'>
   readonly expTotal: Prisma.FieldRef<"Project", 'Float'>
+  readonly status: Prisma.FieldRef<"Project", 'ProjectStatus'>
   readonly createdAt: Prisma.FieldRef<"Project", 'DateTime'>
   readonly updatedAt: Prisma.FieldRef<"Project", 'DateTime'>
 }
