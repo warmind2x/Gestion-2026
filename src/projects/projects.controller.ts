@@ -5,7 +5,6 @@ import {
   Body,
   Patch,
   Param,
-  Delete,
   UploadedFile,
   UseInterceptors,
   BadRequestException,
@@ -362,5 +361,13 @@ export class ProjectsController {
     @Body('status') status: ProjectStatus,
   ) {
     return this.projectsService.updateStatus(id, status);
+  }
+
+  @Patch(':id/engineer')
+  updateEngineer(
+    @Param('id', ParseIntPipe) id: number,
+    @Body('projectEngineer') projectEngineer: string,
+  ) {
+    return this.projectsService.updateEngineer(id, projectEngineer);
   }
 }

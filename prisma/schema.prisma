@@ -15,16 +15,17 @@ datasource db {
 }
 
 model Project {
-  id            Int            @id @default(autoincrement())
-  lcpCode       String         @unique
-  name          String
-  capTotal      Float          @default(0)
-  expTotal      Float          @default(0)
-  status        ProjectStatus  @default(CERRADO)
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-  reals         Real[]
-  comprometidos Comprometido[]
+  id              Int            @id @default(autoincrement())
+  lcpCode         String         @unique
+  name            String
+  capTotal        Float          @default(0)
+  expTotal        Float          @default(0)
+  status          ProjectStatus  @default(CERRADO)
+  projectEngineer String         @default("")
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  reals           Real[]
+  comprometidos   Comprometido[]
 }
 
 model Real {

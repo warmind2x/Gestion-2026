@@ -852,4 +852,11 @@ export class ProjectsService {
       data: { status },
     });
   }
+
+  async updateEngineer(id: number, projectEngineer: string) {
+    return this.prisma.project.update({
+      where: { id },
+      data: { projectEngineer },
+    });
+  }
 }

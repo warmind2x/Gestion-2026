@@ -79,6 +79,7 @@ export const ProjectScalarFieldEnum = {
   capTotal: 'capTotal',
   expTotal: 'expTotal',
   status: 'status',
+  projectEngineer: 'projectEngineer',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const
