@@ -1,0 +1,211 @@
+05.03.2026  Salida dinámica de lista                                                       1
+
+
+		Objeto	Denominación del objeto	Creado	Registrado	Valor/Mon.tr.	MonT
+
+		EEX-240000	EX-Cambio Duct Eqs AC S. Social y P Grua	AA18610	25.01.2024	   50.000,00	USD
+
+	*	Ejercicio 2024				   50.000,00	USD
+
+		EEX-240003	EX-Upgrade AACC Units for Extruder & ASR	AA18610	12.03.2024	  100.000,00	USD
+
+	*	Ejercicio 2024				  100.000,00	USD
+
+		EEX-240004	EX-Upgrade AACC Units for TBM	AA18610	12.03.2024	  100.000,00	USD
+
+	*	Ejercicio 2024				  100.000,00	USD
+
+		EEX-240005	EX-Ruedas Ergonomicas Carros Apexer	AA18610	02.04.2024	  125.000,00	USD
+		EEX-240005	EX-Ruedas Ergonomicas Carros Apexer	AA18610	23.07.2024	   10.000,00	USD
+		EEX-240005	EX-Ruedas Ergonomicas Carros Apexer	AA18610	23.07.2024	-5.000,00	USD
+		EEX-240005	EX-Ruedas Ergonomicas Carros Apexer	AA18610	07.08.2024	    7.487,00	USD
+
+	*	Ejercicio 2024				  137.487,00	USD
+
+		EEX-240007	EX-Critical Entrapment Points Div B	AA18610	09.04.2024	  150.000,00	USD
+		EEX-240007	EX-Critical Entrapment Points Div B	AE04807	24.10.2025	-23.727,00	USD
+
+	*	Ejercicio 2024				  126.273,00	USD
+
+		EEX-240008	EX-Normalizar trabajos eléc. y mecá DivA	AA18610	15.04.2024	   25.000,00	USD
+
+	*	Ejercicio 2024				   25.000,00	USD
+
+		EEX-240009	EX-Cambio piping suministros generales	AA18610	18.04.2024	  100.000,00	USD
+		EEX-240009	EX-Cambio piping suministros generales	AA18610	14.11.2024	    9.990,00	USD
+
+	*	Ejercicio 2024				  109.990,00	USD
+
+		EEX-240010	EX-Nuevos spool breaker -area steelastic	AA18610	06.05.2024	  100.000,00	USD
+
+	*	Ejercicio 2024				  100.000,00	USD
+
+		EEX-240011	EX-Modificación de seguridad carros ntco	AA18610	22.05.2024	   25.000,00	USD
+
+	*	Ejercicio 2024				   25.000,00	USD
+
+		EEX-240012	EX-Condicion basica cuarto seco Steelas	AA18610	03.06.2024	   46.000,00	USD
+		EEX-240012	EX-Condicion basica cuarto seco Steelas	AE04807	24.10.2025	-9.373,00	USD
+
+	*	Ejercicio 2024				   36.627,00	USD
+
+		EEX-240013	EX-Mejoramiento instalacion precalentado	AA18610	03.06.2024	   45.000,00	USD
+		EEX-240013	EX-Mejoramiento instalacion precalentado	AE04807	24.10.2025	-992,00	USD
+
+	*	Ejercicio 2024				   44.008,00	USD
+
+		EEX-240015	EX-Preparatory entrapment points Div. A	AA18610	12.08.2024	  100.000,00	USD
+		EEX-240015	EX-Preparatory entrapment points Div. A	AA18610	15.10.2024	    9.990,00	USD
+
+	*	Ejercicio 2024				  109.990,00	USD
+
+		EEX-240016	EX-Replacing damaged water pipes	AA18610	26.08.2024	  100.000,00	USD
+		EEX-240016	EX-Replacing damaged water pipes	AA18610	14.11.2024	    9.990,00	USD
+
+	*	Ejercicio 2024				  109.990,00	USD
+
+		EEX-240017	EX-Upgrade banco conden 2,3KV SE N°1	AA18610	11.09.2024	   50.000,00	USD
+		EEX-240017	EX-Upgrade banco conden 2,3KV SE N°1	AE04807	24.10.2025	-4.741,00	USD
+		EEX-240017	EX-Upgrade banco conden 2,3KV SE N°1	AE04807	24.10.2025	-0,70	USD
+
+	*	Ejercicio 2024				   45.258,30	USD
+
+		EEX-240019	EX-Reparacion piping Extrusora Hexaplex	AA18610	02.09.2024	   35.000,00	USD
+
+	*	Ejercicio 2024				   35.000,00	USD
+
+		EEX-250000	EX-Preparatory entrapment point Prep MiX	AA18610	18.02.2025	   70.000,00	USD
+		EEX-250000	EX-Preparatory entrapment point Prep MiX	AE04807	24.10.2025	-23.000,00	USD
+
+	*	Ejercicio 2025				   47.000,00	USD
+
+		EEX-250001	EX-Thermic Insulation (Steam pipe line)	AE04807	06.06.2025	  150.000,00	USD
+		EEX-250001	EX-Thermic Insulation (Steam pipe line)	AE04807	24.10.2025	-35.000,00	USD
+
+	*	Ejercicio 2025				  115.000,00	USD
+
+		EEX-250003	EX-Reparacion Piping General Planta	AA18610	15.04.2025	  100.000,00	USD
+
+	*	Ejercicio 2025				  100.000,00	USD
+
+		EEX-250004	EX-Modificación centro distribución S10	AA18610	15.04.2025	   60.000,00	USD
+
+	*	Ejercicio 2025				   60.000,00	USD
+
+		EEX-250006	EX-Upgrade AC Units Division A y B	AA18610	03.06.2025	  200.000,00	USD
+
+	*	Ejercicio 2025				  200.000,00	USD
+
+		EEX-250007	EX-C-Com Relocation (TBM, ASRS)	AA18610	14.05.2025	  175.000,00	USD
+
+	*	Ejercicio 2025				  175.000,00	USD
+
+		EEX-250008	EX-Reubicación estacion de desarme/repar	AE04807	05.06.2025	  125.000,00	USD
+
+	*	Ejercicio 2025				  125.000,00	USD
+
+		EEX-250009	EX-Reubicación taller de armado bladders	AA18610	03.06.2025	   90.000,00	USD
+
+	*	Ejercicio 2025				   90.000,00	USD
+
+		EEX-250010	EX-Reubicacion estacion lubricado manual	AE04807	06.06.2025	   80.000,00	USD
+
+	*	Ejercicio 2025				   80.000,00	USD
+
+		EEX-250011	EX-Molds cleaning Shop Relocation	AE04807	05.06.2025	  900.000,00	USD
+
+	*	Ejercicio 2025				  900.000,00	USD
+
+		EEX-250013	EX-Camaras de Vision Artificial Pruebas	AE04807	26.08.2025	   70.000,00	USD
+
+	*	Ejercicio 2025				   70.000,00	USD
+
+		EEX-250014	EX-Eliminación de Asbesto	AE04807	24.07.2025	   60.000,00	USD
+
+	*	Ejercicio 2025				   60.000,00	USD
+
+		EEX-250015	EX-Fire Risk Reduction T100 - T400 Phas	AE04807	26.08.2025	   90.000,00	USD
+
+	*	Ejercicio 2025				   90.000,00	USD
+
+		EEX-250016	CAP-Aire acondicionado oficinas genera	AE04807	26.08.2025	   50.000,00	USD
+
+	*	Ejercicio 2025				   50.000,00	USD
+
+		EEX-250017	EX-Reduccion Generacion Ruido, Fase 1	AE04807	26.08.2025	   90.000,00	USD
+
+	*	Ejercicio 2025				   90.000,00	USD
+
+		EEX-250018	EX-Fire Risk Reduction Mixer Building	AE04807	05.09.2025	   90.000,00	USD
+
+	*	Ejercicio 2025				   90.000,00	USD
+
+		EEX-250020	EX-Resorte NEV tipo platillo	AE04807	04.11.2025	   16.000,00	USD
+
+	*	Ejercicio 2025				   16.000,00	USD
+
+		EEX-250021	EX-Gripper Beadwinder and Wig Wag Toolin	AE04807	11.09.2025	   95.000,00	USD
+
+	*	Ejercicio 2025				   95.000,00	USD
+
+		EEX-250022	EX-Reemplazos Estructurales Montacarga2	AE04807	07.10.2025	   96.000,00	USD
+
+	*	Ejercicio 2025				   96.000,00	USD
+
+		EEX-250023	EX-Safety improvemets for HF	AE04807	16.09.2025	   40.000,00	USD
+
+	*	Ejercicio 2025				   40.000,00	USD
+
+		EEX-250024	EX-Relocalizacion Chancador Raw Material	AE04807	01.10.2025	  150.000,00	USD
+		EEX-250024	EX-Relocalizacion Chancador Raw Material	AE04807	26.01.2026	    3.000,00	USD
+
+	*	Ejercicio 2025				  153.000,00	USD
+
+		EEX-250025	EX-Up grade vigas de tecle de calandr	AE04807	13.10.2025	   62.000,00	USD
+
+	*	Ejercicio 2025				   62.000,00	USD
+
+		EEX-250026	EX-Instalacion de sellos de bronce tefl	AE04807	21.11.2025	   97.000,00	USD
+
+	*	Ejercicio 2025				   97.000,00	USD
+
+		EEX-250027	EX-Cambio de descarga de agua Cooling	AE04807	18.11.2025	   19.000,00	USD
+
+	*	Ejercicio 2025				   19.000,00	USD
+
+		EEX-250028	EX-Reparacion cubierta de techo policlin	AE04807	19.11.2025	   50.000,00	USD
+		EEX-250028	EX-Reparacion cubierta de techo policlin	AE04807	18.12.2025	   45.000,00	USD
+
+	*	Ejercicio 2025				   95.000,00	USD
+
+		EEX-250029	EX-Reparacion de sistema de resfrigerac	AE04807	20.11.2025	  100.000,00	USD
+
+	*	Ejercicio 2025				  100.000,00	USD
+
+		EEX-250030	EX-Reparacion Piping General Planta	AE04807	20.11.2025	  100.000,00	USD
+
+	*	Ejercicio 2025				  100.000,00	USD
+
+		EEX-250031	EX-Cambio de Piping Alimentación Refrig	AE04807	20.11.2025	  100.000,00	USD
+
+	*	Ejercicio 2025				  100.000,00	USD
+
+		EEX-250032	EX-Reemplazo Tablero Alumbrado Edifici	AE04807	27.11.2025	   60.000,00	USD
+
+	*	Ejercicio 2025				   60.000,00	USD
+
+		EEX-250034	EX-Reparacion Piping 16" Agua Blanda	AE04807	27.11.2025	   63.000,00	USD
+
+	*	Ejercicio 2025				   63.000,00	USD
+
+		EEX-250035	EX-Modification Safety improvemets for	AE04807	02.12.2025	   50.000,00	USD
+
+	*	Ejercicio 2025				   50.000,00	USD
+
+		EEX-250036	EX-Cambio de Die Holder	AE04807	11.12.2025	   25.000,00	USD
+
+	*	Ejercicio 2025				   25.000,00	USD
+
+		EEX-260000	EX-Placas Metalicas para piso de Mixer	AE04807	19.01.2026	   96.000,00	USD
+
+	*	Ejercicio 2026				   96.000,00	USD

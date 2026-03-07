@@ -17,19 +17,17 @@ import { ApiBody, ApiConsumes, ApiTags } from '@nestjs/swagger';
 import * as fs from 'fs';
 import * as path from 'path';
 import { ProjectStatus } from '../generated/prisma/client';
+import { ImportBudgetResult } from './dto/import-budget-result.dto';
 
 @ApiTags('Projects')
 @Controller('projects')
 export class ProjectsController {
   constructor(private readonly projectsService: ProjectsService) {}
 
-  // =============================
-  // IMPORTAR PRESUPUESTO TSV
-  // =============================
   @Post('importBudget')
   @UseInterceptors(
     FileInterceptor('file', {
-      limits: { fileSize: 50 * 1024 * 1024 }, // 500 MB
+      limits: { fileSize: 50 * 1024 * 1024 },
     }),
   )
   @ApiConsumes('multipart/form-data')
@@ -46,7 +44,7 @@ export class ProjectsController {
   })
   async importBudget(
     @UploadedFile() file: Express.Multer.File,
-  ): Promise<{ message: string }> {
+  ): Promise<{ message: string; result: ImportBudgetResult }> {
     if (!file) {
       throw new BadRequestException('Archivo no recibido');
     }
@@ -57,15 +55,70 @@ export class ProjectsController {
     fs.mkdirSync(tempDir, { recursive: true });
 
     try {
-      // Escritura temporal del archivo
       await fs.promises.writeFile(tempPath, file.buffer);
 
-      // Procesamiento real (stream dentro del service)
-      await this.projectsService.importBudget(tempPath);
+      const result = await this.projectsService.importBudget(tempPath);
 
-      return { message: 'Archivo importado correctamente' };
+      return {
+        message: 'Archivo importado correctamente',
+        result,
+      };
     } finally {
-      // Limpieza garantizada
+      if (fs.existsSync(tempPath)) {
+        fs.unlinkSync(tempPath);
+      }
+    }
+  }
+
+  // ______           _            _     _____ _______   __
+  // | ___ \         | |          | |   |  ___|  ___\ \ / /
+  // | |_/ /_   _  __| | __ _  ___| |_  | |__ | |__  \ V /
+  // | ___ \ | | |/ _` |/ _` |/ _ \ __| |  __||  __| /   \
+  // | |_/ / |_| | (_| | (_| |  __/ |_  | |___| |___/ /^\ \
+  // \____/ \__,_|\__,_|\__, |\___|\__| \____/\____/\/   \/
+  //                     __/ |
+  //                    |___/
+
+  @Post('importBudgetEEX')
+  @UseInterceptors(
+    FileInterceptor('file', {
+      limits: { fileSize: 50 * 1024 * 1024 },
+    }),
+  )
+  @ApiConsumes('multipart/form-data')
+  @ApiBody({
+    schema: {
+      type: 'object',
+      properties: {
+        file: {
+          type: 'string',
+          format: 'binary',
+        },
+      },
+    },
+  })
+  async importBudgetEEX(
+    @UploadedFile() file: Express.Multer.File,
+  ): Promise<{ message: string; result: ImportBudgetResult }> {
+    if (!file) {
+      throw new BadRequestException('Archivo no recibido');
+    }
+
+    const tempDir = path.join(process.cwd(), 'tmp');
+    const tempPath = path.join(tempDir, `${Date.now()}-${file.originalname}`);
+
+    fs.mkdirSync(tempDir, { recursive: true });
+
+    try {
+      await fs.promises.writeFile(tempPath, file.buffer);
+
+      const result = await this.projectsService.importBudgetEEX(tempPath);
+
+      return {
+        message: 'Archivo importado correctamente',
+        result,
+      };
+    } finally {
       if (fs.existsSync(tempPath)) {
         fs.unlinkSync(tempPath);
       }
@@ -123,6 +176,56 @@ export class ProjectsController {
   }
 
   // =============================
+  // IMPORTAR REAL TSV EEX
+  // =============================
+
+  @Post('importRealEEX')
+  @UseInterceptors(
+    FileInterceptor('file', {
+      limits: { fileSize: 50 * 1024 * 1024 }, // 500 MB
+    }),
+  )
+  @ApiConsumes('multipart/form-data')
+  @ApiBody({
+    schema: {
+      type: 'object',
+      properties: {
+        file: {
+          type: 'string',
+          format: 'binary',
+        },
+      },
+    },
+  })
+  async importRealEEX(
+    @UploadedFile() file: Express.Multer.File,
+  ): Promise<{ message: string }> {
+    if (!file) {
+      throw new BadRequestException('Archivo no recibido');
+    }
+
+    const tempDir = path.join(process.cwd(), 'tmp');
+    const tempPath = path.join(tempDir, `${Date.now()}-${file.originalname}`);
+
+    fs.mkdirSync(tempDir, { recursive: true });
+
+    try {
+      // Escritura temporal del archivo
+      await fs.promises.writeFile(tempPath, file.buffer);
+
+      // Procesamiento real (stream dentro del service)
+      await this.projectsService.importRealEEX(tempPath);
+
+      return { message: 'Archivo importado correctamente' };
+    } finally {
+      // Limpieza garantizada
+      if (fs.existsSync(tempPath)) {
+        fs.unlinkSync(tempPath);
+      }
+    }
+  }
+
+  // =============================
   // IMPORTAR PRESUPUESTO TSV
   // =============================
 
@@ -162,6 +265,56 @@ export class ProjectsController {
 
       // Procesamiento real (stream dentro del service)
       await this.projectsService.importComprometido(tempPath);
+
+      return { message: 'Archivo importado correctamente' };
+    } finally {
+      // Limpieza garantizada
+      if (fs.existsSync(tempPath)) {
+        fs.unlinkSync(tempPath);
+      }
+    }
+  }
+
+  // =============================
+  // IMPORTAR COMPROMETIDO EEX TSV
+  // =============================
+
+  @Post('importComprometidoEEX')
+  @UseInterceptors(
+    FileInterceptor('file', {
+      limits: { fileSize: 50 * 1024 * 1024 }, // 500 MB
+    }),
+  )
+  @ApiConsumes('multipart/form-data')
+  @ApiBody({
+    schema: {
+      type: 'object',
+      properties: {
+        file: {
+          type: 'string',
+          format: 'binary',
+        },
+      },
+    },
+  })
+  async importComprometidoEEX(
+    @UploadedFile() file: Express.Multer.File,
+  ): Promise<{ message: string }> {
+    if (!file) {
+      throw new BadRequestException('Archivo no recibido');
+    }
+
+    const tempDir = path.join(process.cwd(), 'tmp');
+    const tempPath = path.join(tempDir, `${Date.now()}-${file.originalname}`);
+
+    fs.mkdirSync(tempDir, { recursive: true });
+
+    try {
+      // Escritura temporal del archivo
+      await fs.promises.writeFile(tempPath, file.buffer);
+
+      // Procesamiento real (stream dentro del service)
+      await this.projectsService.importComprometidoEEX(tempPath);
 
       return { message: 'Archivo importado correctamente' };
     } finally {

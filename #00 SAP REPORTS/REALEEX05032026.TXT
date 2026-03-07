@@ -1,0 +1,996 @@
+05.03.2026                             Salida dinámica de lista                                                                                   1
+
+
+		Elemento PEP	Denominación del objeto	Texto de pedido		   Val/MonObj	MonO	Doc.compr.	Usuario	Fe.contab.
+
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua	Conexión Equipos AC Ductos Sede Social		    7.234,51	USD	8241723071	AC15848	26.02.2024
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua	Conexión Equipos AC Ductos Sede Social		    3.109,65	USD	8241723071	AC15848	29.02.2024
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua	Conexión Equipos AC Ductos Sede Social		       78,25	USD	8241723071	AC77311	29.02.2024
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua	Conexión Equipos AC Ductos Sede Social		      103,65	USD	8241723071	AC77311	14.03.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM			    4.412,42	USD		ZA35674	14.03.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM			    4.412,42	USD		ZA81613	16.03.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM			    2.555,29	USD		ZA46317	19.03.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM			   10.030,14	USD		ZA46317	19.03.2024
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua	Canalización Cableado Aéreo Puente		    4.880,62	USD	8241728291	AC15848	22.03.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM			-4.412,42	USD		ZA47750	25.03.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM			-4.412,42	USD		ZA47750	25.03.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR			    8.824,84	USD		ZA81615	25.03.2024
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua	Canalización Cableado Aéreo Puente		-52,17	USD	8241728291	AC77311	28.03.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer			        1,65	USD		ZA81615	03.04.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	Cambio equipo AC		    3.261,55	USD	8241798254	AA21351	12.04.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO RITTAL P/N: 3179801		   18.698,64	USD	8241805039	AC44147	18.04.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	Cambio equipo AC		-37,45	USD	8241798254	AC77311	19.04.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimetria para guardas polines		      417,10	USD	8241809758	AC13779	23.04.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			       52,65	USD		ZA81613	23.04.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			       30,15	USD		ZA81613	23.04.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer			    1.329,81	USD		ZA35674	24.04.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO RITTAL P/N: 3179801		      473,84	USD	8241805039	AC77311	24.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales			    2.312,00	USD		ZA81613	25.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales			    3.999,40	USD		ZA81613	25.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales			      107,43	USD		ZA81613	25.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales			        0,08	USD		ZA81613	25.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales			        0,04	USD		ZA81613	25.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales			        0,02	USD		ZA81613	25.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales			        0,02	USD		ZA81613	25.04.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO RITTAL P/N: 3186930		   18.734,76	USD	8241791818	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula 3" clase 150 conpuerta		      836,89	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvulas 4" mariposa clase 150 LUG		      381,00	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula compuerta 2" clase 150		      628,84	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula compuerta 4" clase 160		      557,91	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula de compuerta 6" clase 150		    1.000,29	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula de compuerta 3" clase 300		    1.731,75	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Vávula tipo cuchilla 8" clase 150		      573,67	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flange 6" clase 150		      146,83	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Junta de dilatación 4" Genebre,		      446,50	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Kilos soldadura 6010 - 3/32		       82,99	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Kilos soldadura 7018 - 3/32"		       95,82	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Disco de corte 4.1/2"		       58,03	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Disco desvaste 4.1/2"		       62,25	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Hoja sierra-sable para fierro Hirl-ti		      439,94	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flange 3" clase 150		       62,88	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flange 2" clas 150		       37,98	USD	8241811597	AC44147	29.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flange 4" clase 150		       67,94	USD	8241811597	AC44147	29.04.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimetria para guardas polines		        2,79	USD	8241809758	AC77311	29.04.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Reparación de Pipping y barrido con gas		    3.059,50	USD	8241813614	AC13779	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales			    1.536,46	USD		ZA81613	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula 3" clase 150 conpuerta		        0,79	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvulas 4" mariposa clase 150 LUG		        0,36	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula compuerta 2" clase 150		        0,60	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula compuerta 4" clase 160		        0,53	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula de compuerta 6" clase 150		        0,95	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Válvula de compuerta 3" clase 300		        1,64	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Vávula tipo cuchilla 8" clase 150		        0,55	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flange 6" clase 150		        0,14	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Junta de dilatación 4" Genebre,		        0,42	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Kilos soldadura 6010 - 3/32		        0,07	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Kilos soldadura 7018 - 3/32"		        0,09	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Disco de corte 4.1/2"		        0,05	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Disco desvaste 4.1/2"		        0,05	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Hoja sierra-sable para fierro Hirl-ti		        0,41	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flange 3" clase 150		        0,06	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flange 2" clas 150		        0,04	USD	8241811597	AC41273	30.04.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flange 4" clase 150		        0,07	USD	8241811597	AC41273	30.04.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO RITTAL P/N: 3186930		       17,76	USD	8241791818	AC41273	30.04.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Reparación de Pipping y barrido con gas		        2,90	USD	8241813614	ZA76360	30.04.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabric. e instal. guardas vonvy área vul		    4.925,60	USD	8241809791	AC13779	02.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			       16,22	USD		ZA20326	03.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Cambio de alimentación eléctrica		    4.836,09	USD	8241809776	AC13779	03.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Cambio de piping tunel planta		   11.425,30	USD	8241813500	AC13451	03.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Servicio de reparacion piping gum 2 piso		   17.369,24	USD	8241813500	AC13451	03.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Analisis finito mordaza Steelastic		    2.798,16	USD	8241811862	AC13779	03.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Reparacion piping sistema hidraulico		    9.406,35	USD	8241813499	AC13451	06.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Cambio de piping linea steelastic 6 "		   12.510,09	USD	8241813499	AC13451	06.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Reparacion de linea tcu 1 piso gum C		   16.246,43	USD	8241813511	AC13451	06.05.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabricación e instalación de guardas		    1.612,50	USD	8241827265	AC13779	07.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			       30,22	USD		ZA46317	08.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			    2.737,54	USD		ZA46317	08.05.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabric. e instal. guardas vonvy área vul		      103,40	USD	8241809791	AC41273	08.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Reparacion de linea tcu 1 piso gum C		       60,96	USD	8241813511	AC41273	09.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Analisis finito mordaza Steelastic		       53,40	USD	8241811862	AC41273	09.05.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabricación e instalación de guardas		-1,50	USD	8241827265	AC41273	10.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Valvula compuerta 3 clase 300 libra		      238,48	USD	8241833070	AC44147	14.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flanges plano   DIN DN80 PN25		       86,90	USD	8241833070	AC44147	14.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Codos 90 4" A-234 SCH80		      259,86	USD	8241833070	AC44147	14.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Codos 90 3" A-234 SCH80 SOLDAR		      127,91	USD	8241833070	AC44147	14.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Reducc. Concentricas 4"x3" A-234 SCH80..		      131,49	USD	8241833070	AC44147	14.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Reduccc. Concentricas 3"x2" A-234SCH80.		       80,86	USD	8241833070	AC44147	14.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flanges Planos DIN DN65 PN25		       76,96	USD	8241833070	AC44147	14.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Reparacion piping sistema hidraulico		      220,60	USD	8241813499	AC77311	15.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Cambio de piping linea steelastic 6 "		      293,39	USD	8241813499	AC77311	15.05.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO RITTAL P/N: 3186930		    7.749,62	USD	8241791818	AC44147	16.05.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	AIRE ACONDICIONADO RITTAL P/N: 3186930		   33.561,87	USD	8241801567	AC44147	16.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Valvula compuerta 3 clase 300 libra		        1,54	USD	8241833070	AC41273	17.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flanges plano   DIN DN80 PN25		        0,57	USD	8241833070	AC41273	17.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Codos 90 4" A-234 SCH80		        1,68	USD	8241833070	AC41273	17.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Codos 90 3" A-234 SCH80 SOLDAR		        0,83	USD	8241833070	AC41273	17.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Reducc. Concentricas 4"x3" A-234 SCH80..		        0,85	USD	8241833070	AC41273	17.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Reduccc. Concentricas 3"x2" A-234SCH80.		        0,52	USD	8241833070	AC41273	17.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flanges Planos DIN DN65 PN25		        0,50	USD	8241833070	AC41273	17.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Alimentación Eléct Tecle taller de Mixer		    1.455,68	USD	8241809884	AC13779	23.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Instalación eléctrica tecle edif mixer.		    3.110,39	USD	8241809885	AC13779	23.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Planimetria aplicador de huincha St.		      765,91	USD	8241828904	AC13779	23.05.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO RITTAL P/N: 3186930		       99,45	USD	8241791818	AC41273	23.05.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	AIRE ACONDICIONADO RITTAL P/N: 3186930		      430,68	USD	8241801567	AC41273	23.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			       36,45	USD		ZA20326	23.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Fabricación de mueble		      537,03	USD	8241836688	AA96022	24.05.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    1.806,95	USD		ZA81615	24.05.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    1.675,66	USD		ZA20326	25.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales			    9.662,22	USD		AA14149	03.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Alimentación Eléct Tecle taller de Mixer		-19,35	USD	8241809884	AC77311	29.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Planimetria aplicador de huincha St.		-10,18	USD	8241828904	AC77311	29.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Instalación eléctrica tecle edif mixer.		-41,36	USD	8241809885	AC77311	29.05.2024
+		EEX-240000	EX-Cambio Duct Eqs AC S. Social y P Grua	Motor ventilador equipo ACC		    1.008,20	USD	8241781225	AC44147	30.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			       26,78	USD		ZA20326	31.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			       22,05	USD		ZA20326	31.05.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			       31,09	USD		ZA20326	31.05.2024
+		EEX-240000	EX-Cambio Duct Eqs AC S. Social y P Grua			-1.008,20	USD		AA14149	31.05.2024
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua			    1.008,20	USD		AA14149	31.05.2024
+		EEX-240000	EX-Cambio Duct Eqs AC S. Social y P Grua	Motor ventilador equipo ACC		-4,57	USD	8241781225	AC77311	31.05.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Servicio de reparacion piping gum 2 piso		      812,11	USD	8241813500	AC91020	31.05.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			       64,36	USD		ZA20326	03.06.2024
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua			-4,57	USD		AA14149	31.05.2024
+		EEX-240000	EX-Cambio Duct Eqs AC S. Social y P Grua			        4,57	USD		AA14149	31.05.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    3.351,33	USD		ZA20326	06.06.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Kit completo dede riel para tecle.		      391,57	USD	8241854466	AC44147	06.06.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Fabricación de mueble		-0,97	USD	8241836688	AC41273	07.06.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Cambio de alimentación eléctrica		      253,80	USD	8241809776	AC41273	07.06.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Kit completo dede riel para tecle.		-4,26	USD	8241854466	AC41273	11.06.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabriacr e instalar guardas  ASRS		    4.218,98	USD	8241838122	AC13779	13.06.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Reduc. Concentricas Argen sch80 3x2"		       80,33	USD	8241854465	AC44147	17.06.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Acople STORZ 2" rosca HE - NPT.		      217,88	USD	8241854465	AC44147	17.06.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Tapa STORZ 2".		      136,87	USD	8241854465	AC44147	17.06.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Metros ca#ería sch80 Brasil. 3"		      947,74	USD	8241854465	AC44147	17.06.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Curva 90° Argent. Sch80  3".		       96,77	USD	8241854465	AC44147	17.06.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Flange Argent.negro clase 300 3"		      172,69	USD	8241854465	AC44147	17.06.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Curva 45° Argen  sch85. 3"		      162,20	USD	8241854465	AC44147	17.06.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Motobomba Diesel 3"X3 6.7HPDWP30LE		      953,79	USD	8241854465	AC44147	17.06.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    1.290,68	USD		ZA20326	18.06.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabriacr e instalar guardas  ASRS		-108,08	USD	8241838122	AC41273	18.06.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			      658,67	USD		AA78712	25.06.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			      516,27	USD		AA78712	25.06.2024
+		EEX-240010-01	EX-Nuevos spool breaker -area steelastic	Fabricar nuevos spool de breaker		   61.551,76	USD	8241838042	AC13779	27.06.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO RITTAL P/N: 3179801		    4.806,79	USD	8241805039	AC44147	27.06.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			       61,77	USD		ZA20326	02.07.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			       64,18	USD		ZA20326	02.07.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    2.305,36	USD		ZA20326	04.07.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO RITTAL P/N: 3179801		-150,35	USD	8241805039	AC91020	04.07.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO RITTAL P/N: 3179801		        0,00	USD	8241805039	AC91020	04.07.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			       21,69	USD		ZA81615	09.07.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    1.517,91	USD		ZA35674	11.07.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	AIRE ACONDICIONADO RITTAL P/N: 3186930		   22.313,06	USD	8241801567	AC42522	11.07.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO P/N: SK 3302100		   18.079,35	USD	8241808021	AC44147	17.07.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	AIRE ACONDICIONADO P/N: SK 3302100		   18.933,49	USD	8241801457	AC44147	17.07.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		  115.110,00	USD	8241833133	AC44147	19.07.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		-115.110,00	USD	8241833133	AC44147	19.07.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	AIRE ACONDICIONADO RITTAL P/N: 3186930		-492,20	USD	8241801567	AC41273	19.07.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA			       14,16	USD		ZA20326	19.07.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		  115.110,00	USD	8241833133	AC44147	22.07.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		-115.110,00	USD	8241833133	AC44147	22.07.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			       22,42	USD		ZA20326	22.07.2024
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas	CONJUNTO EJE SAE1045, CON GOLILLA TEFLON		    6.974,80	USD	8241878097	AC44147	22.07.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	AIRE ACONDICIONADO P/N: SK 3302100		-655,25	USD	8241801457	AC77311	22.07.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	AIRE ACONDICIONADO P/N: SK 3302100		-625,70	USD	8241808021	AC77311	22.07.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		  115.110,00	USD	8241833133	AC44147	23.07.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		    5.752,68	USD	8241833133	AC44147	23.07.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Reparación de escotillas zon tecle		    2.328,48	USD	8241817902	AC13779	24.07.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		      110,54	USD	8241833133	AC67886	24.07.2024
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas	CONJUNTO EJE SAE1045, CON GOLILLA TEFLON		-39,48	USD	8241878097	AC41273	25.07.2024
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas	CONJUNTO EJE SAE1045, CON GOLILLA TEFLON		    6.935,32	USD	8241878097	AC44147	25.07.2024
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas	CONJUNTO EJE SAE1045, CON GOLILLA TEFLON		       13,16	USD	8241878097	AC77311	26.07.2024
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas	ASESORIA EN PREVENCION DE RIESGOS		      978,36	USD	8241897217	AA67756	29.07.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Servició soporte técnico		    1.931,40	USD	8241875816	AC13779	06.08.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer			      993,89	USD		ZA25292	06.08.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    1.646,69	USD		ZA25292	06.08.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    1.762,56	USD		ZA25292	06.08.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			        9,17	USD		ZA20326	09.08.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		    6.064,38	USD	8241833133	AC67886	12.08.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		-5.752,68	USD	8241833133	AC67886	12.08.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Servició soporte técnico		       51,80	USD	8241875816	AC41273	12.08.2024
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas	Operator and Maintenance Training		   16.800,00	USD	8241861873	AA67756	14.08.2024
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas	Presupuesto Servicios de Traducción		    1.535,46	USD	8241895246	AA67756	14.08.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			      658,67	USD		ZA35674	23.08.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			      587,52	USD		ZA35674	23.08.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			       31,22	USD		ZA35674	23.08.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			      658,67	USD		ZA81615	26.08.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			      587,51	USD		ZA81615	26.08.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			       75,65	USD		ZA20326	27.08.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer			      496,94	USD		ZA25292	28.08.2024
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua	SIROCCO BLOWER		    4.383,76	USD	8241870462	AC44147	28.08.2024
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas	Presupuesto Servicios de Traducción		       34,35	USD	8241895246	AC77311	30.08.2024
+		EEX-240000-01	EX-Cambio Duct Eqs AC S. Social y P Grua	SIROCCO BLOWER		-19,89	USD	8241870462	AC77311	30.08.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabricar soporte de seg. en maq. Cal Z		      734,40	USD	8241926969	AC13779	04.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			       26,41	USD		ZA20326	05.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			       21,69	USD		ZA20326	05.09.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	SK EVAPORADOR EJECUCIÓN		    4.758,52	USD	8241857166	AC44147	05.09.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	SK VALVULA DE EXTENSION		    3.196,64	USD	8241857158	AC44147	05.09.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	SK SENS. TEMP. AMARILLO 600MM		    1.227,75	USD	8241857158	AC44147	05.09.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	SK SENSOR TEMP. BLANCO 1600MM		      930,13	USD	8241857158	AC44147	05.09.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	SK SENSOR CONDENSACIÓN L=480		      954,84	USD	8241857158	AC44147	05.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        3,18	USD		ZA20326	05.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabricar soporte de seg. en maq. Cal Z		-12,24	USD	8241926969	AC41273	06.09.2024
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas	ASESORIA EN PREVENCION DE RIESGOS		        9,30	USD	8241897217	AC41273	06.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Reemplazo ca#eria de vapor precalentador		   10.635,78	USD	8241914927	AA95980	09.09.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	Mecanico soldador		    2.211,87	USD	8241904672	AA21351	09.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Válvulas de retención 1" Bronce clase 15		    1.001,72	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Flange clase 150 2"		      205,48	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Planchas de Acrílico transparente 1x1.5m		      380,52	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Mortero Hormigón H2O 25 KG. TX.		       45,98	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Válvulas 2" acero inox. de bola. 150		    1.257,83	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	TEE 2" Hilo NPT CLASE 300		      226,62	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Válvula de cuchilla 3" ANSI 150		    1.174,64	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Flange 3" ANSI 150.		      274,82	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Codos 90° soldar 6" CLASE 300		      419,38	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Niple tuerca 2"x2" clase 300		      136,99	USD	8241930322	AC44147	10.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Codos para soldar 90° 4" clase 300		      416,46	USD	8241930322	AC44147	10.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	PC20 1/2" NPT +  UTD26LY ACERO  INOXIDAB		    1.956,51	USD	8241932799	AC44147	12.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 1/2" NPT RB A105		      854,96	USD	8241932799	AC44147	12.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	BPT13A 1/2" BSP  CAPSULA `E´ STD		      268,14	USD	8241932799	AC44147	12.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 1" NPT RB A105  PN100 HIGH		      145,64	USD	8241932799	AC44147	12.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	S1 3/4" BSP VERTICAL  SG IRON		      397,49	USD	8241932799	AC44147	12.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 3/4" NPT RB A105		      324,29	USD	8241932799	AC44147	12.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	DCV41 3/4" NPT AISI316L  METAL SEAT,		    1.139,08	USD	8241932799	AC44147	12.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	PC20 3/4" NPT + UFT32- 21 TRAMPA CONEXIÓ		    4.410,97	USD	8241932799	AC44147	12.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 1.1/2" NPT RB  A105 PN100 HIGH  PE		      241,60	USD	8241932799	AC44147	12.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 3/4" NPT RB A105  PN100 HIGH  PERF		      972,87	USD	8241932799	AC44147	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Válvulas de retención 1" Bronce clase 15		        2,84	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Flange clase 150 2"		        0,58	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Planchas de Acrílico transparente 1x1.5m		        1,08	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Mortero Hormigón H2O 25 KG. TX.		        0,13	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Válvulas 2" acero inox. de bola. 150		        3,57	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	TEE 2" Hilo NPT CLASE 300		        0,64	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Válvula de cuchilla 3" ANSI 150		        3,34	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Flange 3" ANSI 150.		        0,78	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Codos 90° soldar 6" CLASE 300		        1,19	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Niple tuerca 2"x2" clase 300		        0,39	USD	8241930322	AC41273	12.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Codos para soldar 90° 4" clase 300		        1,18	USD	8241930322	AC41273	12.09.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex			    2.492,16	USD		ZA20326	13.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	PC20 1/2" NPT +  UTD26LY ACERO  INOXIDAB		       36,91	USD	8241932799	AC41273	16.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 1/2" NPT RB A105		       16,13	USD	8241932799	AC41273	16.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	BPT13A 1/2" BSP  CAPSULA `E´ STD		        5,06	USD	8241932799	AC41273	16.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 1" NPT RB A105  PN100 HIGH		        2,75	USD	8241932799	AC41273	16.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	S1 3/4" BSP VERTICAL  SG IRON		        7,50	USD	8241932799	AC41273	16.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 3/4" NPT RB A105		        6,12	USD	8241932799	AC41273	16.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	DCV41 3/4" NPT AISI316L  METAL SEAT,		       21,49	USD	8241932799	AC41273	16.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	PC20 3/4" NPT + UFT32- 21 TRAMPA CONEXIÓ		       83,23	USD	8241932799	AC41273	16.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 1.1/2" NPT RB  A105 PN100 HIGH  PE		        4,56	USD	8241932799	AC41273	16.09.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	M10S2 3/4" NPT RB A105  PN100 HIGH  PERF		       18,36	USD	8241932799	AC41273	16.09.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Limpieza de taller despues de cambio		      751,02	USD	8241944402	AC13451	24.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Cambio de ca#eria calandra Z		   23.467,61	USD	8241937652	AC13451	24.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Servicio de reparacion piping general		   18.912,46	USD	8241932809	AC13451	24.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Cambio de piping sector naves goodyear		    8.245,36	USD	8241932823	AC13451	24.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Cambio de piping 6 " steelastic		    9.423,17	USD	8241932836	AC13451	24.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Servicio de arriendo de cilindro de gas		    1.081,43	USD	8241932841	AC13451	24.09.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Cambio de piping 12 " hexaple		   21.738,29	USD	8241933291	AC13451	24.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Sericio de fabricacion de piping tcu		   26.848,65	USD	8241932780	AC13451	24.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Reparacion de piping red general tunel		    3.109,62	USD	8241932824	AC13451	24.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Cambio de piping 6 " steelastic		      139,47	USD	8241932836	AC41273	25.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de guardas mecánicas		    6.734,26	USD	8241920841	AC13779	25.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de guardas mecánicas		    6.632,22	USD	8241920841	AC13779	25.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de guardas mecánicas		    1.658,06	USD	8241920841	AC13779	25.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Reparacion de piping red general tunel		       43,14	USD	8241932824	AC41273	26.09.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Cambio de piping 12 " hexaple		      301,64	USD	8241933291	AC41273	26.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabricación de soportes para guardas		    2.068,15	USD	8241919512	AC13779	27.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Demolición de bases pilares para Guardas		    2.028,53	USD	8241921557	AC13779	27.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de guardas mecánicas		       79,80	USD	8241920841	AC41273	27.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de guardas mecánicas		       78,60	USD	8241920841	AC41273	27.09.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de guardas mecánicas		       19,65	USD	8241920841	AC41273	27.09.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Limpieza de taller despues de cambio		       24,32	USD	8241944402	AC41273	30.09.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	Mecanico soldador		      121,02	USD	8241904672	AC41273	30.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Cambio de piping sector naves goodyear		      282,22	USD	8241932823	AC41273	30.09.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Servicio de reparacion piping general		      647,33	USD	8241932809	AC41273	30.09.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	Mecanico soldador		    2.297,42	USD	8241904672	AA21351	03.10.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer			        0,40	USD		ZA20326	05.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	EVAPORADOR DE CONDENSADO		    1.059,45	USD	8241898406	AC44147	07.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	COMPRESOR		    3.869,28	USD	8241898406	AC44147	07.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	VALVULA DE EXPANSION		      640,20	USD	8241898406	AC44147	07.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	DISPLAY		    1.502,22	USD	8241898406	AC44147	07.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	REGULADOR		      751,11	USD	8241898406	AC44147	07.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	Placa Inverter 3186930/3187930		    2.641,19	USD	8241898406	AC44147	07.10.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    1.970,94	USD		ZA20326	08.10.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			      948,22	USD		ZA20326	08.10.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		-5,13	USD	8241833133	AC67886	08.10.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Válvula de globo A-105 NPT 800 2,1/2"		      207,51	USD	8241938268	AC44147	09.10.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Tee 2" soldar clase 150 Fe.		       52,24	USD	8241938268	AC44147	09.10.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Codos 3" soldar clase 150 Fe.		       77,11	USD	8241938268	AC44147	09.10.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Kilos soldadura 6010 3/32"		      168,49	USD	8241938268	AC44147	09.10.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Sierra sable para metal TC/HM acero fun-		      445,54	USD	8241938268	AC44147	09.10.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Sierra sable para metal  TC/HM acero		      603,98	USD	8241938268	AC44147	09.10.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Sierra sable para metal 305mm x 1,25		      752,10	USD	8241938268	AC44147	09.10.2024
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Válvula 4" de conpuerta acero al carbono		      712,20	USD	8241938268	AC44147	09.10.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Elemento de goma N-EUPEX 125		      671,90	USD	8241944403	AC44147	09.10.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Hidrolavadora HD 4/8 Classic KAP		      679,55	USD	8241944403	AC44147	09.10.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Válvulas de bola 2" lase 150 NPT		      455,18	USD	8241944403	AC44147	09.10.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Demolición de bases pilares para Guardas		-71,28	USD	8241921557	AC41273	09.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	EVAPORADOR DE CONDENSADO		-12,72	USD	8241898406	AC91020	10.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	COMPRESOR		-46,44	USD	8241898406	AC91020	10.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	VALVULA DE EXPANSION		-7,68	USD	8241898406	AC91020	10.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	DISPLAY		-18,03	USD	8241898406	AC91020	10.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	REGULADOR		-9,01	USD	8241898406	AC91020	10.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	Placa Inverter 3186930/3187930		-31,71	USD	8241898406	AC91020	10.10.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	SK VERDAMPFER SK 3383		    8.262,78	USD	8241857158	AC44147	10.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	BOBINA P/ EVAPORADOR		    1.346,07	USD	8241898406	AC44147	10.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	CONDENSADOR		      897,38	USD	8241898406	AC44147	10.10.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Rectific. y pintado de piso por Guardas		    7.840,54	USD	8241926930	AC13779	11.10.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			        0,04	USD		ZA20326	11.10.2024
+		EEX-240004-01	EX-Upgrade AACC Units for TBM	SK VERDAMPFER SK 3383		       77,22	USD	8241857158	AC41273	14.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	BOBINA P/ EVAPORADOR		       12,58	USD	8241898406	AC41273	14.10.2024
+		EEX-240003-01	EX-Upgrade AACC Units for Extruder & ASR	CONDENSADOR		        8,38	USD	8241898406	AC41273	14.10.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Levantamiento Planimétrico		    4.715,98	USD	8241926490	AC13779	17.10.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimet. protec. polines ASRS Z12-CV244		      634,24	USD	8241938684	AC13779	17.10.2024
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	Fuente de poder en formato rack HEP-1000		    1.106,93	USD	8241957380	AC44147	18.10.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Levantamiento Planimétrico		-35,52	USD	8241926490	AC41273	23.10.2024
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	Fuente de poder en formato rack HEP-1000		-4,18	USD	8241957380	AC41273	23.10.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        5,58	USD		ZA81611	26.10.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimet. protec. polines ASRS Z12-CV244		-5,37	USD	8241938684	AC41273	28.10.2024
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	450A Vacuum Contactor, Electrically Held		    8.786,87	USD	8241957380	AC44147	29.10.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Rectific. y pintado de piso por Guardas		-124,11	USD	8241926930	AC41273	29.10.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	Mecanico soldador		    2.261,69	USD	8241904672	AA21351	30.10.2024
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	450A Vacuum Contactor, Electrically Held		-41,57	USD	8241957380	AC41273	30.10.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	Mecanico soldador		-102,25	USD	8241904672	AC41273	31.10.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Cambio de ca#eria calandra Z		-629,57	USD	8241937652	AC41273	31.10.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			       27,60	USD		ZA81611	15.11.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	CASSETTE TROLLEY WHEEL 10"		-450,00	USD	8241833133	ZA31132	18.11.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimetria guardas convey Vulca		    4.972,03	USD	8242002243	AC13779	29.11.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Dise#o, fabric e instal barrera seg.		    1.984,88	USD	8242005292	AC13779	29.11.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de Soportes		      279,07	USD	8242002262	AC13779	29.11.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric. protecciones Acero Inox		    2.379,70	USD	8241919489	AC13779	29.11.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Dise#o, fabric e instal barrera seg.		-3,88	USD	8242005292	AC41273	03.12.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimetria guardas convey Vulca		-9,72	USD	8242002243	AC41273	03.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de Soportes		-0,54	USD	8242002262	AC41273	03.12.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			      128,71	USD		ZA20326	05.12.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			        2,12	USD		ZA20326	05.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Flexible Hidraulico Lub.  5FY8VS		      186,20	USD	8242006106	AC44147	06.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Flexible MW4KFA		      147,30	USD	8242006106	AC44147	06.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Flexible 4W2WW8		      220,33	USD	8242006106	AC44147	06.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        2,47	USD		ZA20326	08.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,08	USD		ZA20326	08.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        3,62	USD		ZA20326	08.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        4,79	USD		ZA20326	08.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,10	USD		ZA20326	08.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,20	USD		ZA20326	08.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Sericio de fabricacion de piping tcu		-1.291,52	USD	8241932780	AC41273	09.12.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Servicio de reparacion de piping		   12.985,98	USD	8242004134	AC13451	09.12.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B			        0,40	USD		ZA20326	11.12.2024
+		EEX-240009-01	EX-Cambio piping suministros generales	Servicio de reparacion de piping		-12,62	USD	8242004134	AC41273	11.12.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	Mecanico soldador		-58,04	USD	8241904672	AC77311	12.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Servicio de arriendo de cilindro de gas		-56,02	USD	8241932841	AC91020	13.12.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Reemplazo ca#eria de vapor precalentador		   14.684,27	USD	8241914927	AA95980	16.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric. protecciones Acero Inox		-13,95	USD	8241919489	AC77311	16.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Servicio de Reparación de Soldaduras		    1.011,67	USD	8242005291	AA12288	17.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Servicio Eliminación de Fugas		    3.025,63	USD	8242005291	AA12288	17.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,20	USD		ZA20326	18.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,12	USD		ZA20326	18.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,81	USD		ZA20326	18.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,19	USD		ZA20326	18.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,06	USD		ZA20326	19.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,20	USD		ZA20326	19.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,20	USD		ZA20326	19.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        3,73	USD		ZA20326	19.12.2024
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Reemplazo ca#eria de vapor precalentador		-72,19	USD	8241914927	AC41273	19.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CA#ERIA INOX AISI 316 SCH 80 S/COST 1/2"		      221,63	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CA#ERIA INOX AISI 316 SCH 80 S/COST 3/4"		    1.116,76	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CA#ERIA INOX AISI 316 SCH 80 S/COST 1"		      333,35	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CODO INOX HEMBRA C/HILO 90° 3000 psi 1"		      233,77	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CODO INOX HEMBRA C/HILO 45° 3000 psi 1"		      189,45	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CODO INOX HEMBRA C/HILO 90° 3000 psi 1/2		      257,86	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	TEE INOX 3000 PSI HEMBRA d= 1/2x1/2x1/2"		      286,60	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	TEE 3000 PSI NPT HEMBRA d= 1"x 1" X 1/2"		      454,97	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	UNION AMERICANA AISI 316NPT 3000 PSI 1"		      166,78	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	UNIÓN AMERICANA NPT 3000 PSI d= 1/2"		      195,11	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	BUSHING AISI 316 3000 PSI NPT 1/2"x 1/4"		      239,24	USD	8242006105	AC44147	20.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	NIPLE INOX AISI 316 SCH 80 d= 1/4" x 3"		      360,68	USD	8242006105	AC44147	20.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,20	USD		ZA81611	21.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,10	USD		ZA81611	21.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,20	USD		ZA81611	21.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,10	USD		ZA81611	21.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,12	USD		ZA81611	21.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,01	USD		ZA81611	21.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        2,73	USD		ZA81611	21.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			       14,15	USD		ZA81611	21.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        5,28	USD		ZA81611	21.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de guardas mecánicas		   63.645,88	USD	8241920841	AC13779	24.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,10	USD		ZA20326	25.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			        0,95	USD		ZA20326	25.12.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	Mecanico soldador cambio de ruedas		    4.498,05	USD	8241973627	AA21351	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CA#ERIA INOX AISI 316 SCH 80 S/COST 1/2"		-0,22	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CA#ERIA INOX AISI 316 SCH 80 S/COST 3/4"		-1,10	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CA#ERIA INOX AISI 316 SCH 80 S/COST 1"		-0,33	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CODO INOX HEMBRA C/HILO 90° 3000 psi 1"		-0,23	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CODO INOX HEMBRA C/HILO 45° 3000 psi 1"		-0,19	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	CODO INOX HEMBRA C/HILO 90° 3000 psi 1/2		-0,26	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	TEE INOX 3000 PSI HEMBRA d= 1/2x1/2x1/2"		-0,28	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	TEE 3000 PSI NPT HEMBRA d= 1"x 1" X 1/2"		-0,44	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	UNION AMERICANA AISI 316NPT 3000 PSI 1"		-0,17	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	UNIÓN AMERICANA NPT 3000 PSI d= 1/2"		-0,19	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	BUSHING AISI 316 3000 PSI NPT 1/2"x 1/4"		-0,24	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	NIPLE INOX AISI 316 SCH 80 d= 1/4" x 3"		-0,36	USD	8242006105	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Servicio de Reparación de Soldaduras		        1,01	USD	8242005291	AC77311	26.12.2024
+		EEX-240016-01	EX-Replacing damaged water pipes	Servicio Eliminación de Fugas		        2,99	USD	8242005291	AC77311	26.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric e instal de guardas mecánicas		      126,41	USD	8241920841	AC41273	27.12.2024
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer			        0,30	USD		ZA35674	27.12.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimet. protec. polines Convy FF		    1.861,61	USD	8241977737	AC13779	27.12.2024
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimetria guardas Correas y polines FF		    2.292,85	USD	8242035902	AC13779	27.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Guarda protección Steel #5. Windup		    1.133,21	USD	8242011689	AC13779	27.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Modif y fabricación de guardas Fischer		    2.171,37	USD	8242026583	AC13779	27.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric. protecciones Acero Inox		    2.347,14	USD	8241919489	AC13779	27.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Modif y fabricación de guardas Fischer		-2,15	USD	8242026583	AC91020	30.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Guarda protección Steel #5. Windup		-1,13	USD	8242011689	AC91020	30.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabric. protecciones Acero Inox		-2,33	USD	8241919489	AC91020	30.12.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    1.563,50	USD		ZA20326	31.12.2024
+		EEX-240011-01	EX-Modificación de seguridad carros ntco			    1.422,33	USD		ZA20326	31.12.2024
+		EEX-240008-01	EX-Normalizar trabajos eléc. y mecá DivA	Fabricación de 12 polines		    2.233,73	USD	8241926968	AC13779	31.12.2024
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			       79,28	USD		ZA20326	07.01.2025
+		EEX-240005-01	EX-Ruedas Ergonomicas Carros Apexer	Mecanico soldador cambio de ruedas		-75,64	USD	8241973627	AC41273	08.01.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			       21,06	USD		ZA20326	08.01.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A			       31,08	USD		ZA20326	08.01.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Cuadrilla adicional para instal Guardas		    1.397,20	USD	8242017203	AC13779	16.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	FABRICAR 2 PROTECCIONES METALICAS PRECAL		      737,79	USD	8242040416	AA95980	17.01.2025
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	pinza Fluke paquete de 3		    1.567,23	USD	8242042109	AC44147	17.01.2025
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	Transformadores de corriente		      556,75	USD	8242042109	AC44147	17.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	BATERIA ION LITIO 4AH 20V:DCB204-B3*DEWA		      130,69	USD	8242047891	AC44147	17.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	CARGADOR BATERIA 18-60V:DCB118-B2*DEWALT		       53,46	USD	8242047891	AC44147	17.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Conec. Purgador ASME B1.20.2 NPT  400°C		    3.589,40	USD	8242051716	AC44147	21.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	IERRA BANDA CORTE PROFUNDO 20V S/BAT S/C		      276,16	USD	8242047891	AC44147	24.01.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Modif y fabricación de guardas Fischer		    2.411,88	USD	8242026583	AC13779	24.01.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Cuadrilla adicional para instal Guardas		       26,60	USD	8242017203	AC41273	27.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	FABRICAR 2 PROTECCIONES METALICAS PRECAL		       20,89	USD	8242040416	AC41273	27.01.2025
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	pinza Fluke paquete de 3		       44,37	USD	8242042109	AC41273	27.01.2025
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	Transformadores de corriente		       15,76	USD	8242042109	AC41273	27.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	BATERIA ION LITIO 4AH 20V:DCB204-B3*DEWA		        3,70	USD	8242047891	AC41273	27.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	CARGADOR BATERIA 18-60V:DCB118-B2*DEWALT		        1,52	USD	8242047891	AC41273	27.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Conec. Purgador ASME B1.20.2 NPT  400°C		       98,10	USD	8242051716	AC77311	28.01.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Servicio mano de obra y modificaciones		    4.133,12	USD	8242026603	AC13779	30.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	IERRA BANDA CORTE PROFUNDO 20V S/BAT S/C		-0,28	USD	8242047891	AC41273	30.01.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Modif y fabricación de guardas Fischer		-2,39	USD	8242026583	AC77311	30.01.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Servicio mano de obra y modificaciones		       24,57	USD	8242026603	AC91020	31.01.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	FABRICACION DE PILAR EN PERFIL 75.75.3 X		      318,44	USD	8242066507	AA95980	10.02.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabric e instal guardas polines ASRS		    2.532,20	USD	8242005293	AC13779	14.02.2025
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	Capacitor unit, EX-7Li, 100kVar, 2400V		   28.506,02	USD	8241957379	AC44147	20.02.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabric e instal guardas polines ASRS		-4,81	USD	8242005293	AC41273	20.02.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimetria guardas Correas y polines FF		    2.388,29	USD	8242035902	AA05336	20.02.2025
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	Capacitor unit, EX-7Li, 100kVar, 2400V		      216,98	USD	8241957379	AC77311	21.02.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planimetria guardas Correas y polines FF		       22,72	USD	8242035902	AC77311	24.02.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Kit Esmeril Angular DCG413B 41/2" 20v DE		      900,55	USD	8242080272	AC44147	28.02.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Pie de Metro Digital 8"-200 mm		      576,40	USD	8242080272	AC44147	28.02.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Adaptador Digital de Torque y angulo M 1		      518,76	USD	8242080272	AC44147	28.02.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Dobladora Tubos 1/4"-5/16"-3/8" N# 456 R		      105,80	USD	8242080272	AC44147	28.02.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Dobladora Tubos 1/2" N# 408 RIDGID		      269,34	USD	8242080272	AC44147	28.02.2025
+		EEX-240013-01	EX-Mejoramiento instalacion precalentado	Medidor de Inclinacion Bosch GIM 60L		      245,35	USD	8242080272	AC44147	28.02.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Guardas paara pateadores FF		    2.467,20	USD	8242005280	AC13779	03.03.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Guardas paara pateadores FF		       68,27	USD	8242005280	AC41273	10.03.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX			        1,95	USD		ZA20326	18.03.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX			        3,69	USD		ZA20326	18.03.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabricar e instalas Rejas guardas de Seg		   36.437,94	USD	8242053622	AC13779	19.03.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabricar e instalas Rejas guardas de Seg		-100,38	USD	8242053622	AC77311	27.03.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX			       22,72	USD		ZA20326	01.04.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX			        0,60	USD		ZA20326	04.04.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX			       20,83	USD		ZA81611	11.04.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX			       43,20	USD		ZA20326	15.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula de globo A-105 NPT 1.1/2" C800		      248,00	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Fusora con panel digital PPR		      285,25	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Tubería de 32mm PPR. 6MT.		      999,57	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Buje Rrd. 63x32 PPR KOALITIÓN.		        7,40	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HI 63X2 PPR KOALITIÓN		      134,41	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula de bola MET 50mm PPR .		      142,64	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HE  63X2 PPR KOALITION		      166,61	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HE 50X1.1/2"PPR KOALITION,		       56,05	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Tubería PPR 63mm.alfa facher KOALITIÓN		    1.338,44	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Coplas 63mm.PPR KOALITION.		       47,89	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Codo 63mm 90° PPR KOALITION.		       23,48	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Tijera corta tubo 40-63 PPR KOALITION.		       77,74	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula de bola Plast/63mm PPR KOALIT.		       69,11	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula mariposa 3" PN16 Génebre		      304,10	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Coplas 32mm.PPR KOALITION		       18,01	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Kit de 30 codos 32x90	/45°	       21,13	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	KITDE 12 terminales 32x1 PPR KOALITION		      110,19	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula de bola met 32mm PPR KOALIT.		       99,59	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Unión Amer, 32mm PPR KOALITIÓN		       62,85	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvulas 2" acero inox.		    1.107,80	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula decompuerta 4" clase 300.		      638,49	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Tuberia 2" sch 80		      235,88	USD	8242137915	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	fix stix 3.5" epoxy 34978-1		      655,78	USD	8242143988	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	stop-it piper repair 4" x 12"		    2.247,64	USD	8242143988	AC44147	29.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	stop-it piper repair 4" x 25"		    3.623,80	USD	8242143988	AC44147	29.04.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Nueva guarda letoff recup cojin cal gum		      800,25	USD	8242119710	AC13779	29.04.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabricar e instalas Rejas guardas de Seg		   14.471,93	USD	8242053622	AC13779	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula de globo A-105 NPT 1.1/2" C800		-5,35	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Fusora con panel digital PPR		-6,14	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Tubería de 32mm PPR. 6MT.		-21,55	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Buje Rrd. 63x32 PPR KOALITIÓN.		-0,16	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HI 63X2 PPR KOALITIÓN		-2,90	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula de bola MET 50mm PPR .		-3,07	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HE  63X2 PPR KOALITION		-3,60	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HE 50X1.1/2"PPR KOALITION,		-1,20	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Tubería PPR 63mm.alfa facher KOALITIÓN		-28,85	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Coplas 63mm.PPR KOALITION.		-1,04	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Codo 63mm 90° PPR KOALITION.		-0,50	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Tijera corta tubo 40-63 PPR KOALITION.		-1,68	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula de bola Plast/63mm PPR KOALIT.		-1,49	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula mariposa 3" PN16 Génebre		-6,56	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Coplas 32mm.PPR KOALITION		-0,39	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Kit de 30 codos 32x90	/45°	-0,46	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	KITDE 12 terminales 32x1 PPR KOALITION		-2,37	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula de bola met 32mm PPR KOALIT.		-2,15	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Unión Amer, 32mm PPR KOALITIÓN		-1,35	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvulas 2" acero inox.		-23,88	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula decompuerta 4" clase 300.		-13,76	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Tuberia 2" sch 80		-5,09	USD	8242137915	AC41273	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	fix stix 3.5" epoxy 34978-1		-14,14	USD	8242143988	AC77311	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	stop-it piper repair 4" x 12"		-48,45	USD	8242143988	AC77311	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	stop-it piper repair 4" x 25"		-78,11	USD	8242143988	AC77311	30.04.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Cambio de piping Calandra z		   13.815,19	USD	8242137650	AC13451	05.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de cambio de piping TCU mixer 5		    4.952,86	USD	8242144028	AC13451	05.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de quipo de alza hombre PP		    1.599,03	USD	8242144410	AC13451	05.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de soldadores parada de planta		    3.904,14	USD	8242137922	AC13451	05.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HE PVC/EPDM 1" SCH80		       79,11	USD	8242144015	AC44147	06.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Unión Americana PVC/EPDM 1" SCH80		      161,73	USD	8242144015	AC44147	06.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Válvula de bola PVC/EPDM 4" SCH80		      602,65	USD	8242144015	AC44147	06.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HE PVC/EPDM 2" SCH80		      112,78	USD	8242144015	AC44147	06.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HI PVC/EPDM 2" SCH80		      112,78	USD	8242144015	AC44147	06.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	TEE PVC/EPDM 1" SCH80		       95,02	USD	8242144015	AC44147	06.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	TEE PVC/EPDM 2" SCH80		      108,53	USD	8242144015	AC44147	06.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Terminal HI PVC/EPDM 1" sch80		       79,11	USD	8242144015	AC44147	06.05.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Nueva guarda letoff recup cojin cal gum		-2,25	USD	8242119710	AC77311	06.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	SERVICIO DE CAMBIO DE VALVULAR PIPING		    4.113,19	USD	8242137923	AC13451	06.05.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabricar e instalas Rejas guardas de Seg		      194,07	USD	8242053622	AC41273	08.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	SERVICIO DE CAMBIO DE VALVULAR PIPING		-23,19	USD	8242137923	AC41273	08.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de cambio de piping TCU mixer 5		-23,29	USD	8242144028	AC41273	08.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Cambio de piping Calandra z		-64,98	USD	8242137650	AC41273	08.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Cambio de piping 12" edificio 1j		    8.116,55	USD	8242137941	AC13451	08.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de reparacion pinping pozo 5		    3.251,30	USD	8242137910	AC13451	12.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de reparacion pinping pozo 5		-3.251,30	USD	8242137910	AC13451	12.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Equipo de soldadore parada de planta		    1.661,60	USD	8242142342	AC13451	12.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de reparacion pinping pozo 5		    3.281,92	USD	8242137910	AC13451	12.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de reparacion pinping pozo 5		-24,49	USD	8242137910	AC41273	15.05.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Cambio de piping 12" edificio 1j		       46,02	USD	8242137941	AC41273	15.05.2025
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	MUFA INT 8KV 4- 2/0 MONOP QT-8B PLUS		    2.307,00	USD	8242037953	AC44147	22.05.2025
+		EEX-240017-01	EX-Upgrade banco conden 2,3KV SE N°1	MUFA INT 8KV 4- 2/0 MONOP QT-8B PLUS		        4,35	USD	8242037953	AC41273	26.05.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Fabric. e instalac. de soporte rodillo		      847,15	USD	8242116006	AC13779	28.05.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Fabric. Polin, Guarda Polin, Roldana		    1.068,49	USD	8242115989	AA95980	30.05.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Dise#o y fabric de nuevas planchas		    5.084,90	USD	8242118579	AA95980	30.05.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Fabric. e instalac. de soporte rodillo		        0,79	USD	8242116006	AC41273	30.05.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Fabric. Guia de entrada windup Fischer		      570,29	USD	8242099551	AA95980	02.06.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Guardas para sensores Recup de cojin		    1.103,69	USD	8242162393	AA95980	03.06.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Fabric. Polin, Guarda Polin, Roldana		-5,00	USD	8242115989	AC41273	04.06.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Dise#o y fabric de nuevas planchas		-23,83	USD	8242118579	AC41273	04.06.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Fabric. Guia de entrada windup Fischer		        2,69	USD	8242099551	AC77311	05.06.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de soldadores parada de planta		       29,38	USD	8242137922	AC41273	09.06.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Servicio de quipo de alza hombre PP		       12,04	USD	8242144410	AC41273	09.06.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Guardas para sensores Recup de cojin		        7,26	USD	8242162393	AC41273	09.06.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Conexionado Planta Fotovoltaica a Red GY		   22.513,45	USD	8242138839	AA18489	09.06.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Guardas para sistema frenos windup		    1.670,99	USD	8242119731	AA95980	18.06.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Guardas para sistema frenos windup		-14,13	USD	8242119731	AC41273	23.06.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Nueva guarda convey wind dup Fischer 2		    1.125,45	USD	8242138838	AA95980	03.07.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Proyecto Proyecto puertas recuperadora d		    2.689,11	USD	8242189000	AA95980	07.07.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Conexionado Planta Fotovoltaica a Red GY		       42,04	USD	8242138839	AC77311	08.07.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Proyecto Proyecto puertas recuperadora d		-37,59	USD	8242189000	AC41273	09.07.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Nueva guarda convey wind dup Fischer 2		-21,90	USD	8242138838	AC41273	09.07.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta	Equipo de soldadore parada de planta		-31,00	USD	8242142342	AC77311	11.07.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3186930		   40.017,54	USD	8242222168	AC44147	04.08.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3179801		   11.400,04	USD	8242222168	AC44147	04.08.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipos AAC 3185830		   10.629,59	USD	8242222168	AC44147	04.08.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3186930		       77,41	USD	8242222168	AC77311	11.08.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3179801		       22,05	USD	8242222168	AC77311	11.08.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipos AAC 3185830		       20,56	USD	8242222168	AC77311	11.08.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Dise#o Arquitectura & Cálculo Cecom ASRS		    4.685,90	USD	8242202690	AC15848	12.08.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Dise#o Arquitectura & Cálculo Cecom ASRS		       22,72	USD	8242202690	AC77311	21.08.2025
+		EEX-250004-01	EX-Modificación centro distribución S10			-4.685,90	USD		AA14149	12.08.2025
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)			    4.685,90	USD		AA14149	12.08.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Instalación Interlock Recuperadora Cojin		    1.398,54	USD	8242232711	AA95980	26.08.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	canalización se#al corriente Planta FV		    1.217,84	USD	8242225579	AC13451	27.08.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	FABRICACION DE PROTECCIONES AC INOX STEE		    2.463,82	USD	8242189014	AA95980	29.08.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			    3.598,00	USD		AA14149	31.08.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	FABRICACION DE PROTECCIONES AC INOX STEE		-16,68	USD	8242189014	AC41273	03.09.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta			    7.191,23	USD		AA14149	02.09.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Dise#o, fabric e instal barrera seg.		    1.083,41	USD	8242005292	AC13779	08.09.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Instalación Interlock Recuperadora Cojin		-2,69	USD	8242232711	AC41273	08.09.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	canalización se#al corriente Planta FV		        1,17	USD	8242225579	AC41273	08.09.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabricar placas para sensores Fischer		      456,44	USD	8242017199	AA95980	10.09.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Dise#o, fabric e instal barrera seg.		       10,44	USD	8242005292	AC41273	12.09.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	OptoLED#  OG20000		      729,62	USD	8242248368	AC44147	12.09.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	OptoLED#  OF10000		      269,12	USD	8242248368	AC44147	12.09.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	OptoLED#  OG20000		        0,69	USD	8242248368	AC41273	15.09.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	OptoLED#  OF10000		        0,26	USD	8242248368	AC41273	15.09.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	Fabricar placas para sensores Fischer		        5,73	USD	8242017199	AC41273	15.09.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	FABRICACION Y MONTAJE DE GUARDAS WINDUP		    1.431,94	USD	8242248511	AA95980	26.09.2025
+		EEX-240015-01	EX-Preparatory entrapment points Div. A	FABRICACION Y MONTAJE DE GUARDAS WINDUP		-12,29	USD	8242248511	AC77311	30.09.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Mejoras en guardas Fischer 1y2		    2.517,15	USD	8242115958	AA95980	30.09.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Limp. Convey, paredes y pilares Trincher		   44.598,79	USD	8242248305	AA21351	30.09.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Fabric e instal guardas polines ASRS		    2.496,13	USD	8242005293	AA95980	30.09.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Guardas paara pateadores FF		    2.443,66	USD	8242005280	AA95980	30.09.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building	Suministro de pinturas y pintado Batchof		    8.392,49	USD	8242257072	AC13779	30.09.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building	Limpieza Batchoff de mixer		   23.132,69	USD	8242248296	AC13779	30.09.2025
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas			    2.922,73	USD		AA14149	30.09.2025
+		EEX-250003-01	EX-Reparacion Piping General Planta			      270,43	USD		AA14149	30.09.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Esmalte blanco sintetico		    3.808,87	USD	8242249076	AC44147	02.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Azul RAL 5003		    2.539,25	USD	8242249076	AC44147	02.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Amarillo RAL 1003		      653,96	USD	8242249076	AC44147	02.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	ESMALTE AL AGUA RAL 7064		      146,46	USD	8242249076	AC44147	02.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	ESMALTE AL AGUA RAL 6803		      146,46	USD	8242249076	AC44147	02.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Rodillo 12"		      264,40	USD	8242249076	AC44147	02.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Cinta Maskil		      257,31	USD	8242249076	AC44147	02.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Brocha de 3"		      254,96	USD	8242249076	AC44147	02.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Rodillo de 25"		      333,24	USD	8242249076	AC44147	02.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Brocha de 2"		      237,28	USD	8242249076	AC44147	02.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		    3.199,74	USD	8242213520	AC44147	02.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		    3.228,07	USD	8242213520	AC44147	02.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		      520,81	USD	8242213520	AC44147	02.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		      520,81	USD	8242213520	AC44147	02.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3179801		    9.172,95	USD	8242222168	AC44147	03.10.2025
+		EEX-250021-01	EX-Gripper Beadwinder and Wig Wag Tooli			   34.986,00	USD		AA14149	07.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Esmalte blanco sintetico		-10,96	USD	8242249076	AC41273	08.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Azul RAL 5003		-7,31	USD	8242249076	AC41273	08.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Amarillo RAL 1003		-1,88	USD	8242249076	AC41273	08.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	ESMALTE AL AGUA RAL 7064		-0,43	USD	8242249076	AC41273	08.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	ESMALTE AL AGUA RAL 6803		-0,43	USD	8242249076	AC41273	08.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Rodillo 12"		-0,76	USD	8242249076	AC41273	08.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Cinta Maskil		-0,74	USD	8242249076	AC41273	08.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Brocha de 3"		-0,73	USD	8242249076	AC41273	08.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Rodillo de 25"		-0,96	USD	8242249076	AC41273	08.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Brocha de 2"		-0,68	USD	8242249076	AC41273	08.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3179801		      123,49	USD	8242222168	AC97495	10.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Retiro de latas en techos T-300 Vulca		    1.801,13	USD	8242257054	AC13779	13.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3179801		   13.865,27	USD	8242222168	AC44147	13.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Split 18.000 btu		    1.550,34	USD	8242239460	AC44147	14.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Bomba de condensado		      454,14	USD	8242239460	AC44147	14.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Sellos tableros		      554,36	USD	8242248770	AC44147	14.10.2025
+		EEX-240012-01	EX-Condicion basica cuarto seco Steelas			        3,00	USD		ZA20326	15.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3186930		   18.260,16	USD	8242222168	AC44147	15.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3178800		   46.960,48	USD	8242222168	AC44147	15.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Suminst e instalal de equipo de AC		    4.995,34	USD	8242244322	AC13779	15.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3179801		-79,38	USD	8242222168	AC41273	16.10.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building	Limpieza Batchoff de mixer		       89,14	USD	8242248296	AC41273	16.10.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building	Suministro de pinturas y pintado Batchof		       32,34	USD	8242257072	AC41273	16.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Split 18.000 btu		-2,97	USD	8242239460	AC41273	16.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Bomba de condensado		-0,87	USD	8242239460	AC41273	16.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Sellos tableros		-1,06	USD	8242248770	AC41273	16.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		      277,50	USD	8242213520	AC67886	16.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		      270,90	USD	8242213520	AC67886	16.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		-520,81	USD	8242213520	AC67886	16.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		-520,81	USD	8242213520	AC67886	16.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		       23,72	USD	8242213520	AC67886	16.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		       23,60	USD	8242213520	AC67886	16.10.2025
+		EEX-250001-01	EX-Thermic Insulation (Steam pipe line)	Suminist e Instalación Aislación Térmica		   36.495,20	USD	8242207571	AA18489	17.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3186930		        0,00	USD	8242222168	AC41273	18.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3186930		      140,73	USD	8242222168	AC41273	18.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Equipo AAC 3178800		      361,93	USD	8242222168	AC41273	18.10.2025
+		EEX-250001-01	EX-Thermic Insulation (Steam pipe line)	Suminist e Instalación Aislación Térmica		      174,45	USD	8242207571	AC41273	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK COMPRESOR 3398332		    1.582,85	USD	8242224632	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK BOBINA P/ EVAPORADOR 2KW 3398340		      928,91	USD	8242224632	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK CONDENSADOR 2KW 3398341		      928,91	USD	8242224632	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK EVAPORADOR EJECUCIÓN, 230V-3397717		    1.367,64	USD	8242229886	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK VALVULA DE EXTENSION TEL 1-3397054		      910,41	USD	8242229886	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Sk Inverter-3398594		      969,11	USD	8242229886	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK VALVULA DE EXPANSION 3398334		      327,37	USD	8242224632	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK REGULADOR 3398354		    1.920,43	USD	8242224632	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK BOBINA P/ VALVULA MAGNETICA 3398343		      517,53	USD	8242224632	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK Placa Inverter 3186930/3187930		    6.752,85	USD	8242224632	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK EVAPORADOR DE CONDENSADO 3398350		      541,75	USD	8242224632	AC44147	22.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK SENSOR DE TEMPERATURA 3398339		      805,46	USD	8242224632	AC44147	22.10.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Retiro de latas en techos T-300 Vulca		       17,19	USD	8242257054	AC77311	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK VALVULA DE EXPANSION 3398334		        2,18	USD	8242224632	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK REGULADOR 3398354		       12,79	USD	8242224632	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK BOBINA P/ VALVULA MAGNETICA 3398343		        3,44	USD	8242224632	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK SENSOR DE TEMPERATURA 3398339		        5,36	USD	8242224632	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK EVAPORADOR EJECUCIÓN, 230V-3397717		        9,11	USD	8242229886	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK VALVULA DE EXTENSION TEL 1-3397054		        6,06	USD	8242229886	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Sk Inverter-3398594		        6,45	USD	8242229886	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK COMPRESOR 3398332		       10,54	USD	8242224632	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK BOBINA P/ EVAPORADOR 2KW 3398340		        6,18	USD	8242224632	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK CONDENSADOR 2KW 3398341		        6,18	USD	8242224632	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK Placa Inverter 3186930/3187930		        0,00	USD	8242224632	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK Placa Inverter 3186930/3187930		       44,97	USD	8242224632	AC41273	24.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK EVAPORADOR DE CONDENSADO 3398350		        3,61	USD	8242224632	AC41273	24.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		-15,86	USD	8242213520	AC67886	27.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		-16,46	USD	8242213520	AC67886	27.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		       15,86	USD	8242213520	AC67886	27.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		       16,46	USD	8242213520	AC67886	27.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK ventil axial A3G250AG1309 - 3396657		    2.135,47	USD	8242229886	AC44147	27.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK ventil radial R3G190RC0307-3396646		    2.408,36	USD	8242229886	AC44147	27.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK Compresor.-3398584		      884,31	USD	8242229886	AC44147	27.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK ventilador axial -3398587		      335,37	USD	8242229886	AC44147	27.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK Valvula de expansion-3398588		      279,18	USD	8242229886	AC44147	27.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK ventilador axial-3398587		      335,37	USD	8242229886	AC44147	27.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK Display-3398599		      372,28	USD	8242229886	AC44147	27.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK CABLE DISPLAY 3398338		      122,03	USD	8242224632	AC44147	27.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Suminst e instalal de equipo de AC		      134,75	USD	8242244322	AC41273	28.10.2025
+		EEX-250013-01	EX-Camaras de Vision Artificial Pruebas	Transmisor de posiciones		    2.045,16	USD	8242265643	AC44147	29.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK CABLE DISPLAY 3398338		        0,23	USD	8242224632	AC41273	29.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK ventil axial A3G250AG1309 - 3396657		        4,03	USD	8242229886	AC41273	29.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK ventil radial R3G190RC0307-3396646		        4,54	USD	8242229886	AC41273	29.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK Compresor.-3398584		        1,66	USD	8242229886	AC41273	29.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK ventilador axial -3398587		        0,64	USD	8242229886	AC41273	29.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK Valvula de expansion-3398588		        0,52	USD	8242229886	AC41273	29.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK ventilador axial-3398587		        0,64	USD	8242229886	AC41273	29.10.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK Display-3398599		        0,70	USD	8242229886	AC41273	29.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		-15,83	USD	8242213520	AC67886	30.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		-16,43	USD	8242213520	AC67886	30.10.2025
+		EEX-250013-01	EX-Camaras de Vision Artificial Pruebas	Transmisor de posiciones		        1,92	USD	8242265643	AC41273	31.10.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Medicion de Ruido horario nocturno		    2.815,44	USD	8242274854	AA05336	03.11.2025
+		EEX-250004-01	EX-Modificación centro distribución S10			       32,87	USD		AA14149	31.10.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Pasa de cableado por muro		    1.767,86	USD	8242249075	AC13451	04.11.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Instalacion de tablero de fuerza SSEE		    6.722,03	USD	8242249075	AC13451	04.11.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Medicion de Ruido horario nocturno		-7,96	USD	8242274854	AC41273	10.11.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Instalacion de tablero de fuerza SSEE		       25,29	USD	8242249075	AC97495	12.11.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Pasa de cableado por muro		        6,65	USD	8242249075	AC97495	12.11.2025
+		EEX-250023-01	EX-Safety improvemets for HF	FABRICACION E INSTALACION DE GUIAS GUARD		   17.634,13	USD	8242268717	AA95980	13.11.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	PROTECCIONES PATEDORES FINAL FINISH		    1.839,12	USD	8242273086	AA95980	14.11.2025
+		EEX-250023-01	EX-Safety improvemets for HF	FABRICACION E INSTALACION DE GUIAS GUARD		-16,43	USD	8242268717	AC41273	18.11.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Ventilador Turbo Axial -PITUB-500		    2.358,11	USD	8242285864	AC44147	18.11.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Turbo Ventiladores		    1.534,95	USD	8242285858	AC44147	18.11.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	VENT Turbo Axial		    2.682,00	USD	8242285858	AC44147	18.11.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Ventiladores Turboaxiales		    5.032,59	USD	8242285856	AC44147	18.11.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Electrical GT Dissasemble Relocation		    6.630,66	USD	8242229553	ZA51560	19.11.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	PROTECCIONES PATEDORES FINAL FINISH		        5,14	USD	8242273086	AC41273	19.11.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Ventilador Turbo Axial -PITUB-500		-28,20	USD	8242285864	AC41273	20.11.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Turbo Ventiladores		-18,36	USD	8242285858	AC41273	20.11.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	VENT Turbo Axial		-32,07	USD	8242285858	AC41273	20.11.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Ventiladores Turboaxiales		-60,19	USD	8242285856	AC41273	20.11.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Dise#o Arquitectura & Cálculo Cecom ASRS		    3.938,16	USD	8242265600	AC15848	21.11.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Dise#o Arquitectura & Cálculo Cecom TBM		    4.648,32	USD	8242265600	AC15848	21.11.2025
+		EEX-250021-01	EX-Gripper Beadwinder and Wig Wag Tooli	MEDIDOR DE ANGULOS GAM 220 (1076.5) - BO		      250,63	USD	8242274187	AC44147	21.11.2025
+		EEX-250023-01	EX-Safety improvemets for HF	FABRICACION E INSTALACION DE GUIAS GUARD		   17.535,53	USD	8242268717	AA95980	24.11.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Electrical GT Dissasemble Relocation		-55,46	USD	8242229553	AC41273	24.11.2025
+		EEX-250021-01	EX-Gripper Beadwinder and Wig Wag Tooli	MEDIDOR DE ANGULOS GAM 220 (1076.5) - BO		-2,09	USD	8242274187	AC41273	26.11.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK TRANSFORMADOR TOROIDAL EJ.3-3397558		    1.280,72	USD	8242229886	AC44147	26.11.2025
+		EEX-250023-01	EX-Safety improvemets for HF	FABRICACION E INSTALACION DE GUIAS GUARD		      115,04	USD	8242268717	AC41273	27.11.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK TRANSFORMADOR TOROIDAL EJ.3-3397558		        8,40	USD	8242229886	AC41273	27.11.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Dise#o Arquitectura & Cálculo Cecom ASRS		-7,32	USD	8242265600	AC41273	27.11.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	Dise#o Arquitectura & Cálculo Cecom TBM		-8,64	USD	8242265600	AC41273	27.11.2025
+		EEX-250023-01	EX-Safety improvemets for HF	4.312.730		    4.640,50	USD	8242290281	AA95980	28.11.2025
+		EEX-250004-01	EX-Modificación centro distribución S10			       34,12	USD		AA14149	28.11.2025
+		EEX-250032-01	EX-Reemplazo Tablero Alumbrado Edifici	CABLE SUPERFLEX-MULTIFLEX		   18.961,12	USD	8242298870	AC44147	05.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Primer transp. PVC-CPVC 473ML.Sch80		      115,44	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Roscadora eléctrica de 1/2" a 2"Supertro		    2.597,88	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Válvulas de guillotina 6" HERA SH C/150		    1.905,02	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Válvulas de guillotina 4" HERA SH C/150		    1.933,51	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Válvlas de acero  1.1/2" bola soldar.		      624,81	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Válvulas de Mariposa 4"ranurada c/pmec.		    1.693,76	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Disco de corte acero inox,		       41,09	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Hojas de sierra sable, acero.150mm.		      423,93	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Codos para soldar acero sch80 4"		      564,09	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Kilos de soldadura 3/32"-6010,		      197,15	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Tee PVC SCH80.		      129,14	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Buje reducción PVC 3X2" SCH80.		      221,75	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Tee de 2" SCH80.		      151,09	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Codos 90° PVC 2"SCH80.		      111,31	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	tubería CPVC 2" Sc80 ASTM 6MTS.		      311,32	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Adhesivo PVC GRIS OATAY 473 SCH 80.		       80,22	USD	8242295052	AC44147	09.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Tarjeta para identificacion de valvula		    1.300,05	USD	8242295969	AC44147	09.12.2025
+		EEX-250023-01	EX-Safety improvemets for HF	4.312.730		       47,44	USD	8242290281	AC97495	09.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			      806,80	USD		ZA20326	09.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			       17,45	USD		ZA20326	10.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Instalacion RED GT Dissasembly		      946,73	USD	8242298189	ZA51560	10.12.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK VERDAMPFER SK 3383-3397565		    4.849,53	USD	8242229886	AC44147	10.12.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK VERFLUESSIGER SK 3384-3397581		    3.868,29	USD	8242229886	AC44147	10.12.2025
+		EEX-250032-01	EX-Reemplazo Tablero Alumbrado Edifici	CABLE SUPERFLEX-MULTIFLEX		-156,85	USD	8242298870	AC97495	10.12.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	AUDIFONO JABRA EVOLVE 20 SE (4999-823-36		      362,48	USD	8242302785	AC44147	11.12.2025
+		EEX-250036-01	EX-Cambio de Die Holder			   24.551,06	USD		ZA20326	11.12.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK VERFLUESSIGER SK 3384-3397581		-17,80	USD	8242229886	AC41273	12.12.2025
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	SK VERDAMPFER SK 3383-3397565		-22,31	USD	8242229886	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Primer transp. PVC-CPVC 473ML.Sch80		-0,53	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Roscadora eléctrica de 1/2" a 2"Supertro		-11,95	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Válvulas de guillotina 6" HERA SH C/150		-8,76	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Válvulas de guillotina 4" HERA SH C/150		-8,89	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Válvlas de acero  1.1/2" bola soldar.		-2,88	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Válvulas de Mariposa 4"ranurada c/pmec.		-7,79	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Disco de corte acero inox,		-0,19	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Hojas de sierra sable, acero.150mm.		-1,95	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Codos para soldar acero sch80 4"		-2,60	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Kilos de soldadura 3/32"-6010,		-0,91	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Tee PVC SCH80.		-0,60	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Buje reducción PVC 3X2" SCH80.		-1,02	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Tee de 2" SCH80.		-0,69	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Codos 90° PVC 2"SCH80.		-0,51	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	tubería CPVC 2" Sc80 ASTM 6MTS.		-1,44	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Adhesivo PVC GRIS OATAY 473 SCH 80.		-0,37	USD	8242295052	AC41273	12.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Tarjeta para identificacion de valvula		-5,98	USD	8242295969	AC41273	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Brocha de 2" Condor Excelsior		      187,11	USD	8242298850	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Brocha de 3" Condor Excelsior		      289,12	USD	8242298850	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Rodillo de 23 cms chiporro natural Condo		      463,68	USD	8242298850	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Rodillo de 13 cms chiporro natural Condo		      305,31	USD	8242298850	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Cinta Maskin Tape 18 mm x 40 mts Usa Tap		      130,10	USD	8242298850	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Admiral esmalte sintético Blanco		    1.183,35	USD	8242299203	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Admiral esmalte sintético Azul		    1.183,35	USD	8242299203	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Admiral esmalte sintético Amarillo		    1.183,35	USD	8242299203	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	EAA RL KP CONSTRUC SATIN BASE X GL		      115,00	USD	8242299203	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	EAA RL KP CONSTRUC SATIN BASE R GL		      115,00	USD	8242299203	AC44147	12.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	HOJA SIERRA SABLE 225X18PT		       38,49	USD	8242302765	AC44147	12.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	REEMPLAZO Y NORMALIZACION TDFyA FINAL FI		    4.068,19	USD	8242299172	ZA51560	15.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			       94,19	USD		ZA20326	16.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			        2,21	USD		ZA20326	16.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			        0,93	USD		ZA20326	16.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			       17,45	USD		ZA20326	16.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			       47,06	USD		ZA20326	16.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Instalacion RED GT Dissasembly		        7,84	USD	8242298189	AC41273	17.12.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	AUDIFONO JABRA EVOLVE 20 SE (4999-823-36		        5,71	USD	8242302785	AC41273	17.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Admiral esmalte sintético Blanco		        5,43	USD	8242299203	AC41273	17.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Admiral esmalte sintético Azul		        5,43	USD	8242299203	AC41273	17.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Admiral esmalte sintético Amarillo		        5,43	USD	8242299203	AC41273	17.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	EAA RL KP CONSTRUC SATIN BASE X GL		        0,53	USD	8242299203	AC41273	17.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	EAA RL KP CONSTRUC SATIN BASE R GL		        0,53	USD	8242299203	AC41273	17.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	REEMPLAZO Y NORMALIZACION TDFyA FINAL FI		-7,43	USD	8242299172	AC41273	18.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Brocha de 2" Condor Excelsior		        0,51	USD	8242298850	AC41273	18.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Brocha de 3" Condor Excelsior		        0,79	USD	8242298850	AC41273	18.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Rodillo de 23 cms chiporro natural Condo		        1,27	USD	8242298850	AC41273	18.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Rodillo de 13 cms chiporro natural Condo		        0,83	USD	8242298850	AC41273	18.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Cinta Maskin Tape 18 mm x 40 mts Usa Tap		        0,36	USD	8242298850	AC41273	18.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	HOJA SIERRA SABLE 225X18PT		        0,11	USD	8242302765	AC41273	18.12.2025
+		EEX-250001-01	EX-Thermic Insulation (Steam pipe line)	Suminist e Instalación Aislación Térmica		   10.072,70	USD	8242207571	AA18489	18.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			       56,14	USD		ZA20326	19.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			       17,45	USD		ZA20326	19.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			       94,19	USD		ZA20326	19.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			        2,20	USD		ZA20326	19.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	HOJA SIERRA SABLE 225X18PT		      424,17	USD	8242302765	AC44147	19.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Servicio de limpieza de estanque		    4.973,62	USD	8242299202	AC13451	20.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Válvulas hacer carbono 1.1/2" soldar		      652,94	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Batería, 12 volt. CCA 580A, 80 A/H AC-		      824,25	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Válvulas check 2" pvc/epdm Hayward.		      448,21	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Selinciador de alto flujo de 2".		      161,75	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Kilos soldadura 3/32 6011		      110,60	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Nivel Flowmax 220 V-15 A		      343,03	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Disco de corte inox. 4.1/2" x 1mm Stanle		       27,48	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Sellante Asfaltico juntas blackseal.		       96,60	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Junta de expansión 6" según foto.		    1.284,53	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Metros ca#eria pvc 2" celeste.		      105,50	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Codos 45° pvc celeste 2".		       13,19	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Codos de 90° pvc celeste 2"		       13,19	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Coplas de 2" pvc celeste.		       11,43	USD	8242304315	AC44147	22.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Curva 90° sch80 soldar		      531,92	USD	8242304315	AC44147	22.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	Cambio de piping 18" edificio 1 j		   40.062,48	USD	8242298221	AC13451	23.12.2025
+		EEX-250030-01	EX-Reparacion Piping General Planta	Cambio TCU Calandra z		   35.421,33	USD	8242298223	AC13451	23.12.2025
+		EEX-250030-01	EX-Reparacion Piping General Planta	Cambio de alimnetacion de piping APEXER		   40.518,92	USD	8242297795	AC13451	23.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	SERVICIO DE DESMONTAJE DE PIPING		   12.373,13	USD	8242295983	AC13451	23.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	Cambio de pipig 4" taller de extrusion		    9.468,60	USD	8242297803	AC13451	23.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	Reparacion piping trinchera 100 200 300		   16.515,00	USD	8242298616	AC13451	23.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	Servicio de equipo soldadores piping		   20.731,56	USD	8242298208	AC13451	23.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Fabricacion de piping 16" agua		   49.185,84	USD	8242298632	AC13451	23.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Fabricacion de alimentacion y manilfold		   82.691,79	USD	8242298638	AC13451	23.12.2025
+		EEX-250030-01	EX-Reparacion Piping General Planta	CAMBIO DE PIPING AGUA POTABLE		   22.345,75	USD	8242298621	AC13451	23.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	CAMBIO DE PIPING AGUA POTABLE		    5.586,44	USD	8242298621	AC13451	23.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			       95,33	USD		ZA20326	23.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			        2,21	USD		ZA20326	23.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			       47,58	USD		ZA20326	23.12.2025
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	HOJA SIERRA SABLE 225X18PT		        3,88	USD	8242302765	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Válvulas hacer carbono 1.1/2" soldar		        2,37	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Batería, 12 volt. CCA 580A, 80 A/H AC-		        3,00	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Válvulas check 2" pvc/epdm Hayward.		        1,63	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Selinciador de alto flujo de 2".		        0,59	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Kilos soldadura 3/32 6011		        0,41	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Nivel Flowmax 220 V-15 A		        1,25	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Disco de corte inox. 4.1/2" x 1mm Stanle		        0,10	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Sellante Asfaltico juntas blackseal.		        0,35	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Junta de expansión 6" según foto.		        4,68	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Metros ca#eria pvc 2" celeste.		        0,39	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Codos 45° pvc celeste 2".		        0,05	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Codos de 90° pvc celeste 2"		        0,05	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Coplas de 2" pvc celeste.		        0,04	USD	8242304315	AC41273	24.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Curva 90° sch80 soldar		        1,93	USD	8242304315	AC41273	24.12.2025
+		EEX-250030-01	EX-Reparacion Piping General Planta	Cambio TCU Calandra z		      128,69	USD	8242298223	ZB06923	26.12.2025
+		EEX-250030-01	EX-Reparacion Piping General Planta	Cambio de alimnetacion de piping APEXER		      147,20	USD	8242297795	ZB06923	26.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	Cambio de piping 18" edificio 1 j		      145,55	USD	8242298221	ZB06923	26.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Fabricacion de piping 16" agua		      178,69	USD	8242298632	ZB06923	26.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda	Servicio de limpieza de estanque		       54,60	USD	8242299202	AC41273	26.12.2025
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual			      595,26	USD		ZA20326	28.12.2025
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual			        1,00	USD		ZA20326	28.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	Cambio de pipig 4" taller de extrusion		       43,00	USD	8242297803	AC41273	29.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	Reparacion piping trinchera 100 200 300		       75,00	USD	8242298616	AC41273	29.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	Servicio de equipo soldadores piping		       94,15	USD	8242298208	AC41273	29.12.2025
+		EEX-250031-01	EX-Cambio de Piping Alimentación Refrig	SERVICIO DE DESMONTAJE DE PIPING		       56,19	USD	8242295983	AC41273	29.12.2025
+		EEX-250001-01	EX-Thermic Insulation (Steam pipe line)	Suminist e Instalación Aislación Térmica		      110,49	USD	8242207571	ZB06923	29.12.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		-125,83	USD	8242213520	AC67886	29.12.2025
+		EEX-250004-01	EX-Modificación centro distribución S10	TRANSFORMER CURRENT		-129,81	USD	8242213520	AC67886	29.12.2025
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Mechanical GT Dissasemble Relocation		   34.255,95	USD	8242229552	ZA51560	30.12.2025
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Construcción Nvo. Cecom ASRS		   19.040,86	USD	8242264842	AC15848	30.12.2025
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Fabric. de barreras de choque para Racks		    5.099,08	USD	8242297765	AC13779	30.12.2025
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual	Relocalizacion Manual Lube		   48.788,16	USD	8242269067	ZA51560	30.12.2025
+		EEX-250032-01	EX-Reemplazo Tablero Alumbrado Edifici	Cambio de tablero de alumbrado mixer 3		   35.549,35	USD	8242298901	AC13451	30.12.2025
+		EEX-250035-01	EX-Modification Safety improvemets for	MODIFICACION Y REUBICACION DE GUIAS GUAR		   35.238,45	USD	8242299198	AA95980	30.12.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building			       79,46	USD		ZA20326	31.12.2025
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual			       17,45	USD		ZA20326	31.12.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building			       98,00	USD		ZA20326	31.12.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building			      111,99	USD		ZA20326	31.12.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building			      122,50	USD		ZA20326	31.12.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building			        1,00	USD		ZA20326	31.12.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building			        4,23	USD		ZA20326	31.12.2025
+		EEX-250025-01	EX-Up grade vigas de tecle de calandr			    2.784,31	USD		AA14149	30.12.2025
+		EEX-250032-01	EX-Reemplazo Tablero Alumbrado Edifici			      139,41	USD		AA14149	29.12.2025
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda			      295,38	USD		AA14149	29.12.2025
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1			       63,99	USD		ZA20326	31.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	Fabricacion de alimentacion y manilfold		-300,42	USD	8242298638	AC03318	31.12.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building			        5,70	USD		ZA20326	31.12.2025
+		EEX-250030-01	EX-Reparacion Piping General Planta	CAMBIO DE PIPING AGUA POTABLE		-20,30	USD	8242298621	ZB06923	31.12.2025
+		EEX-250029-01	EX-Reparacion de sistema de resfrigerac	CAMBIO DE PIPING AGUA POTABLE		-5,08	USD	8242298621	ZB06923	31.12.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Protección Zona 1 Lubricadora ASRS		   10.165,32	USD	8242290260	AA95980	31.12.2025
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Protección Zona 1 Lubricadora ASRS		    7.224,91	USD	8242290272	AA95980	31.12.2025
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building			      158,91	USD		ZA25292	02.01.2026
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building			       98,35	USD		ZA25292	02.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas			      255,56	USD		ZA35674	02.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas			      238,37	USD		ZA35674	02.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas			      214,15	USD		ZA35674	02.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas			       42,63	USD		ZA35674	02.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas			       98,00	USD		ZA35674	02.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas			       11,43	USD		ZA35674	02.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Limpieza de pilares y muros T500 & T600		   18.898,48	USD	8242299472	AC13779	06.01.2026
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building	Limpieza ductos Mixer 1,2,3,4,y5  Roller		   58.680,29	USD	8242301519	AC13779	06.01.2026
+		EEX-250013-01	EX-Camaras de Vision Artificial Pruebas	FABRICAR METALICA PARA PROTECCION DE LUZ		      245,30	USD	8242299464	AC97021	07.01.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Electrical GT Dissasemble Relocation		    2.290,33	USD	8242229553	ZA51560	07.01.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Refuerzo Estructural Nvo. Cecom ASRS		    4.292,75	USD	8242313517	AC15848	08.01.2026
+		EEX-250000-01	EX-Preparatory entrapment point Prep MiX	Fabric. de barreras de choque para Racks		       92,96	USD	8242297765	AC41273	08.01.2026
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Protección Zona 1 Lubricadora ASRS		       39,09	USD	8242290272	AC41273	09.01.2026
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Protección Zona 1 Lubricadora ASRS		       54,99	USD	8242290260	AC41273	09.01.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Construcción Nvo. Cecom ASRS		      347,15	USD	8242264842	AC41273	12.01.2026
+		EEX-250013-01	EX-Camaras de Vision Artificial Pruebas	FABRICAR METALICA PARA PROTECCION DE LUZ		        0,44	USD	8242299464	AC41273	12.01.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Refuerzo Estructural Nvo. Cecom ASRS		        7,70	USD	8242313517	AC41273	12.01.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Electrical GT Dissasemble Relocation		        4,11	USD	8242229553	AC41273	12.01.2026
+		EEX-250013-01	EX-Camaras de Vision Artificial Pruebas	Camara SICK		    4.457,55	USD	8242307809	AC44147	13.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Servicio de arriendo nuevas plataformas		    7.242,19	USD	8242307082	AC13779	20.01.2026
+		EEX-250016-01	CAP-Aire acondicionado oficinas genera	UPGRADE CLIMATIZACIÓN DE OFICINAS GENER.		   23.478,64	USD	8242290885	AC13779	21.01.2026
+		EEX-250013-01	EX-Camaras de Vision Artificial Pruebas	Camara SICK		-19,74	USD	8242307809	AC41273	21.01.2026
+		EEX-250035-01	EX-Modification Safety improvemets for	MODIFICACION Y REUBICACION DE GUIAS GUAR		   15.680,40	USD	8242299198	AA95980	22.01.2026
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual			        0,50	USD		ZA20326	22.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Limpieza de pilares y muros T500 & T600		-85,20	USD	8242299472	ZB06923	23.01.2026
+		EEX-250016-01	CAP-Aire acondicionado oficinas genera	UPGRADE CLIMATIZACIÓN DE OFICINAS GENER.		      438,27	USD	8242290885	AC41273	23.01.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	Servicio de arriendo nuevas plataformas		      135,19	USD	8242307082	AC41273	23.01.2026
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Metros sin costura A-106 SCH80 8" BRAS.		    1.954,15	USD	8242324320	AC13451	26.01.2026
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Flange WNXS EUROPA A-105 16"/150ANSI		    1.900,98	USD	8242324320	AC13451	26.01.2026
+		EEX-250018-01	EX-Fire Risk Reduction Mixer Building	Limpieza ductos Mixer 1,2,3,4,y5  Roller		-211,65	USD	8242301519	ZB06923	26.01.2026
+		EEX-250035-01	EX-Modification Safety improvemets for	MODIFICACION Y REUBICACION DE GUIAS GUAR		-13,77	USD	8242299198	ZB06923	27.01.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Construcción Nvo. Cecom ASRS		   14.081,91	USD	8242264842	AC15848	27.01.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	INSTALACION TOMAS ELECTRICAS HORNO		    1.182,02	USD	8242319403	ZA51560	28.01.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Relocalizacion luminarias		    1.265,72	USD	8242319383	ZA51560	28.01.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			      141,02	USD		ZA20326	28.01.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Construcción Nvo. Cecom ASRS		       85,05	USD	8242264842	AC41273	29.01.2026
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Flange WNXS EUROPA A-105 16"/150ANSI		       29,81	USD	8242324320	AC41273	29.01.2026
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Metros sin costura A-106 SCH80 8" BRAS.		       30,64	USD	8242324320	AC41273	29.01.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Relocalizacion luminarias		        6,55	USD	8242319383	AC41273	30.01.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	INSTALACION TOMAS ELECTRICAS HORNO		        6,12	USD	8242319403	AC41273	30.01.2026
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Flange WNXS EUROPA A-105 16"/150ANSI		-9,94	USD	8242324320	ZB06923	31.01.2026
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Metros sin costura A-106 SCH80 8" BRAS.		-10,21	USD	8242324320	ZB06923	31.01.2026
+		EEX-250011-01	EX-Molds cleaning Shop Relocation	Normalizar  Carpa 15 x 60 Mecanica		   15.301,37	USD	8242318523	ZA51560	02.02.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			    7.476,09	USD		AA14149	31.01.2026
+		EEX-250004-01	EX-Modificación centro distribución S10			    1.323,10	USD		AA14149	30.01.2026
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual			      993,56	USD		AA14149	30.01.2026
+		EEX-250034-01	EX-Reparacion Piping 16" Agua Blanda			      650,23	USD		AA14149	30.01.2026
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Cilindro Naumatico		      127,04	USD	8242297766	AC44147	02.02.2026
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1	Cilindro Naumatico		        0,76	USD	8242297766	AC41273	04.02.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			        0,30	USD		ZA20326	06.02.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar			        9,79	USD		ZA20326	06.02.2026
+		EEX-250013-01	EX-Camaras de Vision Artificial Pruebas	MEDIDOR DE INCLINACION LASER GIM 60L (10		      253,99	USD	8242319375	AC42522	09.02.2026
+		EEX-250011-01	EX-Molds cleaning Shop Relocation	CABLE 1KV 1AWG NEGRO SUPERFLEX EX09 03		    4.319,53	USD	8242327964	AC42522	10.02.2026
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual	Barrera cambio de bladder / Lubricadora		    3.384,78	USD	8242327929	ZA51560	10.02.2026
+		EEX-250011-01	EX-Molds cleaning Shop Relocation	Protección tablero Sala de bateria		    1.591,39	USD	8242327337	ZA51560	10.02.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Protecciones Estructura Nvo Cecom ASRS		    3.588,65	USD	8242327997	AC15848	10.02.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Inst. 3 Puntos Red Nvo. Cecom ASRS		      765,56	USD	8242327937	AC15848	10.02.2026
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planos de construcción dise#o de dos opc		      761,15	USD	8242327598	AA95980	10.02.2026
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Suminist e instalac. equipos de clima		    6.107,84	USD	8242274203	AC13779	10.02.2026
+		EEX-250011-01	EX-Molds cleaning Shop Relocation	Normalizar  Carpa 15 x 60 Electrica		    2.871,95	USD	8242318522	ZA51560	11.02.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Construcción Nvo. Cecom ASRS		   20.273,23	USD	8242264842	AC15848	11.02.2026
+		EEX-250013-01	EX-Camaras de Vision Artificial Pruebas	MEDIDOR DE INCLINACION LASER GIM 60L (10		        1,09	USD	8242319375	AC41273	11.02.2026
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Flange WNXS EUROPA A-105 16"/150ANSI		       33,12	USD	8242324320	AC97495	11.02.2026
+		EEX-240019-01	EX-Reparacion piping Extrusora Hexaplex	Metros sin costura A-106 SCH80 8" BRAS.		       34,04	USD	8242324320	AC97495	11.02.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Mechanical GT Dissasemble Relocation		    4.052,56	USD	8242229552	ZA51560	11.02.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Sum. TV (2) Led & Soportes CCTV ASRS		      686,70	USD	8242335844	AC15848	12.02.2026
+		EEX-250011-01	EX-Molds cleaning Shop Relocation	Protección tablero Sala de bateria		-4,08	USD	8242327337	AC97495	12.02.2026
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual	Barrera cambio de bladder / Lubricadora		-8,68	USD	8242327929	AC97495	12.02.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Protecciones Estructura Nvo Cecom ASRS		-9,20	USD	8242327997	AC97495	12.02.2026
+		EEX-240007-01	EX-Critical Entrapment Points Div B	Planos de construcción dise#o de dos opc		-1,95	USD	8242327598	AC97495	12.02.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	FABRICACION PROTECCION CONVEYER INSTALAC		    4.029,60	USD	8242327599	ZA51560	12.02.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	Mechanical GT Dissasemble Relocation		        6,94	USD	8242229552	AC97495	13.02.2026
+		EEX-250011-01	EX-Molds cleaning Shop Relocation	Normalizar  Carpa 15 x 60 Electrica		        4,92	USD	8242318522	AC97495	13.02.2026
+		EEX-250011-01	EX-Molds cleaning Shop Relocation	CABLE 1KV 1AWG NEGRO SUPERFLEX EX09 03		-3,69	USD	8242327964	ZB06923	13.02.2026
+		EEX-250006-01	EX-Upgrade AC Units Division A y B	Suminist e instalac. equipos de clima		-67,80	USD	8242274203	AC09772	16.02.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Construcción Nvo. Cecom ASRS		-173,58	USD	8242264842	AC09772	16.02.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Inst. 3 Puntos Red Nvo. Cecom ASRS		-8,49	USD	8242327937	AC09772	16.02.2026
+		EEX-250007-01	EX-C-Com Relocation (TBM, ASRS)	Sum. TV (2) Led & Soportes CCTV ASRS		-5,88	USD	8242335844	AC09772	16.02.2026
+		EEX-250017-01	EX-Reduccion Generacion Ruido, Fase 1			        1,38	USD		ZA20326	17.02.2026
+		EEX-250008-01	EX-Reubicación estacion de desarme/repar	FABRICACION PROTECCION CONVEYER INSTALAC		-55,20	USD	8242327599	AC97495	18.02.2026
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual	Micrófono Motorola compacto DGM5000		      218,97	USD	8242343821	AC44147	26.02.2026
+		EEX-250010-01	EX-Reubicacion estacion lubricado manual	EQUIPO DIGITAL DGM5000e		      990,52	USD	8242343821	AC44147	26.02.2026
+		EEX-250011-01	EX-Molds cleaning Shop Relocation	Normalizar  Carpa 15 x 60 Mecanica		   10.289,16	USD	8242318523	ZA51560	26.02.2026
+		EEX-250027-01	EX-Cambio de descarga de agua Cooling	AUMENTO FLUJO DESCARGA COOLING LINE		   15.000,39	USD	8242327606	AA16651	02.03.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	CANDADOS 30 MM		      488,13	USD	8242299204	AC44147	05.03.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	ALDABA PARA CANDADOS		      385,37	USD	8242299204	AC44147	05.03.2026
+		EEX-250015-01	EX-Fire Risk Reduction T100 - T400 Phas	SELLOS DE SEGURIDAD		      593,13	USD	8242299204	AC44147	05.03.2026
+
+	*					2.482.028,45	USD
